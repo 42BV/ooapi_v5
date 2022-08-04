@@ -16,6 +16,8 @@ package nl.vorsen.ooapi;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -28,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 @JsonPropertyOrder({
   EducationSpecificationId.JSON_PROPERTY_EDUCATION_SPECIFICATION_ID
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class EducationSpecificationId {
   public static final String JSON_PROPERTY_EDUCATION_SPECIFICATION_ID = "educationSpecificationId";
   private UUID educationSpecificationId;

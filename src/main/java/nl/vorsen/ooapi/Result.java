@@ -16,6 +16,8 @@ package nl.vorsen.ooapi;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -35,7 +37,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Result.JSON_PROPERTY_RESULT_DATE,
   Result.JSON_PROPERTY_EXT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class Result {
   public static final String JSON_PROPERTY_STATE = "state";
   private ResultState state;
@@ -95,7 +97,7 @@ public class Result {
    * Get pass
    * @return pass
   **/
-  
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PASS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +124,7 @@ public class Result {
    * The comment on this result
    * @return comment
   **/
-  
+
   @ApiModelProperty(value = "The comment on this result")
   @JsonProperty(JSON_PROPERTY_COMMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,7 +151,7 @@ public class Result {
    * The score of this program/course/component association (based on resultValueType in offering)
    * @return score
   **/
-  
+
   @ApiModelProperty(example = "9", value = "The score of this program/course/component association (based on resultValueType in offering)")
   @JsonProperty(JSON_PROPERTY_SCORE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -203,7 +205,7 @@ public class Result {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

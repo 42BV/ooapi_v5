@@ -19,6 +19,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -49,7 +51,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   GroupOrganization.JSON_PROPERTY_EXT
 })
 @JsonTypeName("Group_organization")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class GroupOrganization {
   public static final String JSON_PROPERTY_ORGANIZATION_ID = "organizationId";
   private UUID organizationId;
@@ -251,7 +253,7 @@ public class GroupOrganization {
    * Any general description of the organization should clearly mention the type of higher education organization, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).
    * @return description
   **/
-  
+ 
   @ApiModelProperty(example = "[{language=nl-NL, value=SURF is een coöperatieve vereniging van Nederlandse onderwijs- en onderzoeksinstellingen waarin de leden hun krachten bundelen. De leden zijn eigenaar van SURF.}]", value = "Any general description of the organization should clearly mention the type of higher education organization, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -286,7 +288,7 @@ public class GroupOrganization {
    * Addresses of this organization
    * @return addresses
   **/
-  
+ 
   @ApiModelProperty(value = "Addresses of this organization")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -313,7 +315,7 @@ public class GroupOrganization {
    * URL of the organization&#39;s website
    * @return link
   **/
-  
+ 
   @ApiModelProperty(example = "https://surf.nl", value = "URL of the organization's website")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -340,7 +342,7 @@ public class GroupOrganization {
    * Logo of this organization
    * @return logo
   **/
-  
+ 
   @ApiModelProperty(example = "https://www.surf.nl/themes/surf/logo.svg", value = "Logo of this organization")
   @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -375,7 +377,7 @@ public class GroupOrganization {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+ 
   @ApiModelProperty(example = "[{codeType=brin, code=00AA}, {codeType=kvk, code=12345678}]", value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -402,7 +404,7 @@ public class GroupOrganization {
    * Get parent
    * @return parent
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -437,7 +439,7 @@ public class GroupOrganization {
    * All the organizational units for which this organization is the parent. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return children
   **/
-  
+ 
   @ApiModelProperty(value = "All the organizational units for which this organization is the parent. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -472,7 +474,7 @@ public class GroupOrganization {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -499,7 +501,7 @@ public class GroupOrganization {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -39,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Address.JSON_PROPERTY_GEOLOCATION,
   Address.JSON_PROPERTY_EXT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class Address {
   public static final String JSON_PROPERTY_ADDRESS_TYPE = "addressType";
   private AddressType addressType;
@@ -108,7 +110,7 @@ public class Address {
    * The street name
    * @return street
   **/
-  
+
   @ApiModelProperty(example = "Moreelsepark", value = "The street name")
   @JsonProperty(JSON_PROPERTY_STREET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,7 +137,7 @@ public class Address {
    * The street number
    * @return streetNumber
   **/
-  
+
   @ApiModelProperty(example = "48", value = "The street number")
   @JsonProperty(JSON_PROPERTY_STREET_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -170,7 +172,7 @@ public class Address {
    * Further details like building name, suite, apartment number, etc.
    * @return additional
   **/
-  
+
   @ApiModelProperty(example = "[{language=en-GB, value=On the other side of the road}]", value = "Further details like building name, suite, apartment number, etc.")
   @JsonProperty(JSON_PROPERTY_ADDITIONAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -197,7 +199,7 @@ public class Address {
    * Postal code
    * @return postalCode
   **/
-  
+
   @ApiModelProperty(example = "3511 EP", value = "Postal code")
   @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,7 +226,7 @@ public class Address {
    * name of the city / locality
    * @return city
   **/
-  
+
   @ApiModelProperty(example = "Utrecht", value = "name of the city / locality")
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,7 +253,7 @@ public class Address {
    * the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
    * @return countryCode
   **/
-  
+
   @ApiModelProperty(example = "NL", value = "the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)")
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -278,7 +280,7 @@ public class Address {
    * Get geolocation
    * @return geolocation
   **/
-  
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_GEOLOCATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -305,7 +307,7 @@ public class Address {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

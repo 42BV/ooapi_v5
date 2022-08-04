@@ -20,6 +20,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -45,7 +47,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Group.JSON_PROPERTY_ORGANIZATION,
   Group.JSON_PROPERTY_EXT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class Group {
   public static final String JSON_PROPERTY_GROUP_ID = "groupId";
   private UUID groupId;
@@ -217,7 +219,7 @@ public class Group {
    * The description of this group
    * @return description
   **/
-  
+
   @ApiModelProperty(example = "[{language=en-GB, value=The group of students that follow statistics classes}]", value = "The description of this group")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,7 +246,7 @@ public class Group {
    * The day on which this group starts being active, RFC3339 (full-date)
    * @return startDate
   **/
-  
+
   @ApiModelProperty(example = "Mon Aug 17 02:00:00 CEST 2020", value = "The day on which this group starts being active, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -271,7 +273,7 @@ public class Group {
    * The day on which this group ends being active, RFC3339 (full-date)
    * @return endDate
   **/
-  
+
   @ApiModelProperty(example = "Fri Dec 18 01:00:00 CET 2020", value = "The day on which this group ends being active, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -299,7 +301,7 @@ public class Group {
    * minimum: 0
    * @return personCount
   **/
-  
+
   @ApiModelProperty(example = "183", value = "The number of persons that are member of this group")
   @JsonProperty(JSON_PROPERTY_PERSON_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -334,7 +336,7 @@ public class Group {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,7 +371,7 @@ public class Group {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -396,7 +398,7 @@ public class Group {
    * Get organization
    * @return organization
   **/
-  
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -423,7 +425,7 @@ public class Group {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

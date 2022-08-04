@@ -15,6 +15,8 @@ package nl.vorsen.ooapi;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -31,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Pagination.JSON_PROPERTY_HAS_NEXT_PAGE,
   Pagination.JSON_PROPERTY_TOTAL_PAGES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class Pagination {
   public static final String JSON_PROPERTY_PAGE_SIZE = "pageSize";
   private Integer pageSize;
@@ -170,7 +172,7 @@ public class Pagination {
    * Total number of pages
    * @return totalPages
   **/
-
+ 
   @ApiModelProperty(example = "8", value = "Total number of pages")
   @JsonProperty(JSON_PROPERTY_TOTAL_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

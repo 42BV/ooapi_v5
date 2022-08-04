@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -33,7 +35,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   PostResponse.JSON_PROPERTY_MESSAGE,
   PostResponse.JSON_PROPERTY_REDIRECT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class PostResponse {
   public static final String JSON_PROPERTY_MESSAGE = "message";
   private List<LanguageTypedString> message = new ArrayList<>();

@@ -16,6 +16,8 @@ package nl.vorsen.ooapi;
 import java.time.LocalDate;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -32,7 +34,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   TimelineOverrideEducationSpecification.JSON_PROPERTY_VALID_TO,
   TimelineOverrideEducationSpecification.JSON_PROPERTY_EDUCATION_SPECIFICATION
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class TimelineOverrideEducationSpecification {
   public static final String JSON_PROPERTY_VALID_FROM = "validFrom";
   private LocalDate validFrom;
@@ -83,7 +85,7 @@ public class TimelineOverrideEducationSpecification {
    * The day on which this timelineOverride ends (exclusive), RFC3339 (date)
    * @return validTo
   **/
-  
+ 
   @ApiModelProperty(example = "Wed Aug 31 02:00:00 CEST 2022", value = "The day on which this timelineOverride ends (exclusive), RFC3339 (date)")
   @JsonProperty(JSON_PROPERTY_VALID_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

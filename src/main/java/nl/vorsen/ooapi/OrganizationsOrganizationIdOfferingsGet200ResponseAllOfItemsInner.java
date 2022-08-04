@@ -18,17 +18,15 @@ import java.net.URI;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
-import org.openapitools.jackson.nullable.JsonNullable;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -78,7 +76,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
   OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.JSON_PROPERTY_COURSE_OFFERING
 })
 @JsonTypeName("_organizations__organizationId__offerings_get_200_response_allOf_items_inner")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   public static final String JSON_PROPERTY_OFFERING_ID = "offeringId";
   private UUID offeringId;
@@ -127,7 +125,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   private OfferingTypeEnum offeringType;
 
   public static final String JSON_PROPERTY_ACADEMIC_SESSION = "academicSession";
-  private JsonNullable<OneOfUUIDAcademicSession> academicSession = JsonNullable.<OneOfUUIDAcademicSession>undefined();
+  private String academicSession;
 
   public static final String JSON_PROPERTY_NAME = "name";
   private List<LanguageTypedString> name = new ArrayList<>();
@@ -240,16 +238,16 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   private List<Cost> priceInformation = null;
 
   public static final String JSON_PROPERTY_PROGRAM = "program";
-  private JsonNullable<OneOfUUIDProgram> program = JsonNullable.<OneOfUUIDProgram>undefined();
+  private String program;
 
   public static final String JSON_PROPERTY_ORGANIZATION = "organization";
-  private JsonNullable<OneOfUUIDOrganization> organization = JsonNullable.<OneOfUUIDOrganization>undefined();
+  private String organization;
 
   public static final String JSON_PROPERTY_COURSE = "course";
-  private JsonNullable<OneOfUUIDCourse> course = JsonNullable.<OneOfUUIDCourse>undefined();
+  private String course;
 
   public static final String JSON_PROPERTY_PROGRAM_OFFERING = "programOffering";
-  private JsonNullable<OneOfUUIDProgramOffering> programOffering = JsonNullable.<OneOfUUIDProgramOffering>undefined();
+  private String programOffering;
 
   public static final String JSON_PROPERTY_START_DATE_TIME = "startDateTime";
   private OffsetDateTime startDateTime;
@@ -264,10 +262,10 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   private Room room;
 
   public static final String JSON_PROPERTY_COMPONENT = "component";
-  private JsonNullable<OneOfUUIDComponent> component = JsonNullable.<OneOfUUIDComponent>undefined();
+  private String component;
 
   public static final String JSON_PROPERTY_COURSE_OFFERING = "courseOffering";
-  private JsonNullable<OneOfUUIDCourseOffering> courseOffering = JsonNullable.<OneOfUUIDCourseOffering>undefined();
+  private String courseOffering;
 
   public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner() { 
   }
@@ -350,9 +348,9 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   }
 
 
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner academicSession(OneOfUUIDAcademicSession academicSession) {
-    this.academicSession = JsonNullable.<OneOfUUIDAcademicSession>of(academicSession);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner academicSession(String academicSession) {
     
+    this.academicSession = academicSession;
     return this;
   }
 
@@ -360,28 +358,20 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The academicsession during which this componentoffering takes place. [&#x60;expandable&#x60;](#tag/academic_session_model) By default only the &#x60;academicSessionId&#x60; (a string) is returned. If the client requested an expansion of &#x60;academicSession&#x60; the full academicsession object should be returned. 
    * @return academicSession
   **/
-  
+ 
   @ApiModelProperty(value = "The academicsession during which this componentoffering takes place. [`expandable`](#tag/academic_session_model) By default only the `academicSessionId` (a string) is returned. If the client requested an expansion of `academicSession` the full academicsession object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDAcademicSession getAcademicSession() {
-        return academicSession.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDAcademicSession> getAcademicSession_JsonNullable() {
+  public String getAcademicSession() {
     return academicSession;
   }
-  
-  @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
-  public void setAcademicSession_JsonNullable(JsonNullable<OneOfUUIDAcademicSession> academicSession) {
-    this.academicSession = academicSession;
-  }
 
-  public void setAcademicSession(OneOfUUIDAcademicSession academicSession) {
-    this.academicSession = JsonNullable.<OneOfUUIDAcademicSession>of(academicSession);
+
+  @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAcademicSession(String academicSession) {
+    this.academicSession = academicSession;
   }
 
 
@@ -427,7 +417,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The abbreviation or internal code used to identify this offering
    * @return abbreviation
   **/
-  
+ 
   @ApiModelProperty(example = "Test-INFOMQNM-20FS", value = "The abbreviation or internal code used to identify this offering")
   @JsonProperty(JSON_PROPERTY_ABBREVIATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -521,7 +511,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie 
    * @return modeOfDelivery
   **/
-  
+ 
   @ApiModelProperty(value = "The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie ")
   @JsonProperty(JSON_PROPERTY_MODE_OF_DELIVERY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -549,7 +539,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * minimum: 0
    * @return maxNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "200", value = "The maximum number of students allowed to enroll for this offering")
   @JsonProperty(JSON_PROPERTY_MAX_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -577,7 +567,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * minimum: 0
    * @return enrolledNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "150", value = "The number of students that have already enrolled for this offering")
   @JsonProperty(JSON_PROPERTY_ENROLLED_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -605,7 +595,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * minimum: 0
    * @return pendingNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "50", value = "The number of students that have a pending enrollment request for this offering")
   @JsonProperty(JSON_PROPERTY_PENDING_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -633,7 +623,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * minimum: 0
    * @return minNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "15", value = "The minimum number of students needed for this offering to proceed")
   @JsonProperty(JSON_PROPERTY_MIN_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -687,7 +677,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * Get resultValueType
    * @return resultValueType
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT_VALUE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -714,7 +704,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * URL of this offering&#39;s webpage.
    * @return link
   **/
-  
+ 
   @ApiModelProperty(example = "https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusZoekCursus.do#submitForm?cursuscode=INFOMQNM", value = "URL of this offering's webpage.")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -749,7 +739,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+ 
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -784,7 +774,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/RIO/V1/examples/Offering.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -811,7 +801,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -892,7 +882,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The first day on which a student can enroll for this course.
    * @return enrollStartDate
   **/
-  
+ 
   @ApiModelProperty(value = "The first day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -919,7 +909,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The last day on which a student can enroll for this course.
    * @return enrollEndDate
   **/
-  
+ 
   @ApiModelProperty(value = "The last day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -946,7 +936,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodEnd&#x60;.
    * @return flexibleEntryPeriodStart
   **/
-  
+ 
   @ApiModelProperty(value = "If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodEnd`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_START)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -973,7 +963,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodStart&#x60;.
    * @return flexibleEntryPeriodEnd
   **/
-  
+ 
   @ApiModelProperty(value = "If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodStart`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_END)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1008,7 +998,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * Addresses for this offering
    * @return addresses
   **/
-  
+ 
   @ApiModelProperty(value = "Addresses for this offering")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1043,7 +1033,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * Price information for this offering.
    * @return priceInformation
   **/
-  
+ 
   @ApiModelProperty(value = "Price information for this offering.")
   @JsonProperty(JSON_PROPERTY_PRICE_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1060,9 +1050,9 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   }
 
 
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner program(OneOfUUIDProgram program) {
-    this.program = JsonNullable.<OneOfUUIDProgram>of(program);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner program(String program) {
     
+    this.program = program;
     return this;
   }
 
@@ -1070,34 +1060,26 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The Program that is offered in this programoffering. [&#x60;expandable&#x60;](#tag/program_model) By default only the &#x60;programId&#x60; (a string) is returned. If the client requested an expansion of &#x60;program&#x60; the full program object should be returned. 
    * @return program
   **/
-  
+ 
   @ApiModelProperty(value = "The Program that is offered in this programoffering. [`expandable`](#tag/program_model) By default only the `programId` (a string) is returned. If the client requested an expansion of `program` the full program object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDProgram getProgram() {
-        return program.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_PROGRAM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDProgram> getProgram_JsonNullable() {
+  public String getProgram() {
     return program;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_PROGRAM)
-  public void setProgram_JsonNullable(JsonNullable<OneOfUUIDProgram> program) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setProgram(String program) {
     this.program = program;
   }
 
-  public void setProgram(OneOfUUIDProgram program) {
-    this.program = JsonNullable.<OneOfUUIDProgram>of(program);
-  }
 
-
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner organization(OneOfUUIDOrganization organization) {
-    this.organization = JsonNullable.<OneOfUUIDOrganization>of(organization);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner organization(String organization) {
     
+    this.organization = organization;
     return this;
   }
 
@@ -1105,34 +1087,26 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The organization that manages this componentoffering. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return organization
   **/
-  
+ 
   @ApiModelProperty(value = "The organization that manages this componentoffering. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDOrganization getOrganization() {
-        return organization.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDOrganization> getOrganization_JsonNullable() {
+  public String getOrganization() {
     return organization;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
-  public void setOrganization_JsonNullable(JsonNullable<OneOfUUIDOrganization> organization) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setOrganization(String organization) {
     this.organization = organization;
   }
 
-  public void setOrganization(OneOfUUIDOrganization organization) {
-    this.organization = JsonNullable.<OneOfUUIDOrganization>of(organization);
-  }
 
-
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner course(OneOfUUIDCourse course) {
-    this.course = JsonNullable.<OneOfUUIDCourse>of(course);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner course(String course) {
     
+    this.course = course;
     return this;
   }
 
@@ -1140,34 +1114,26 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The course that is offered in this courseoffering. [&#x60;expandable&#x60;](#tag/course_model) By default only the &#x60;courseId&#x60; (a string) is returned. If the client requested an expansion of &#x60;course&#x60; the full course object should be returned. 
    * @return course
   **/
-  
+ 
   @ApiModelProperty(value = "The course that is offered in this courseoffering. [`expandable`](#tag/course_model) By default only the `courseId` (a string) is returned. If the client requested an expansion of `course` the full course object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDCourse getCourse() {
-        return course.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_COURSE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDCourse> getCourse_JsonNullable() {
+  public String getCourse() {
     return course;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_COURSE)
-  public void setCourse_JsonNullable(JsonNullable<OneOfUUIDCourse> course) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCourse(String course) {
     this.course = course;
   }
 
-  public void setCourse(OneOfUUIDCourse course) {
-    this.course = JsonNullable.<OneOfUUIDCourse>of(course);
-  }
 
-
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner programOffering(OneOfUUIDProgramOffering programOffering) {
-    this.programOffering = JsonNullable.<OneOfUUIDProgramOffering>of(programOffering);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner programOffering(String programOffering) {
     
+    this.programOffering = programOffering;
     return this;
   }
 
@@ -1175,28 +1141,20 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The programoffering where this courseoffering is related to. [&#x60;expandable&#x60;](#tag/program_offering_model) By default only the &#x60;programOfferingId&#x60; (a string) is returned. If the client requested an expansion of &#x60;programOffering&#x60; the full programOffering object should be returned. 
    * @return programOffering
   **/
-  
+ 
   @ApiModelProperty(value = "The programoffering where this courseoffering is related to. [`expandable`](#tag/program_offering_model) By default only the `programOfferingId` (a string) is returned. If the client requested an expansion of `programOffering` the full programOffering object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDProgramOffering getProgramOffering() {
-        return programOffering.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_PROGRAM_OFFERING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDProgramOffering> getProgramOffering_JsonNullable() {
+  public String getProgramOffering() {
     return programOffering;
   }
-  
-  @JsonProperty(JSON_PROPERTY_PROGRAM_OFFERING)
-  public void setProgramOffering_JsonNullable(JsonNullable<OneOfUUIDProgramOffering> programOffering) {
-    this.programOffering = programOffering;
-  }
 
-  public void setProgramOffering(OneOfUUIDProgramOffering programOffering) {
-    this.programOffering = JsonNullable.<OneOfUUIDProgramOffering>of(programOffering);
+
+  @JsonProperty(JSON_PROPERTY_PROGRAM_OFFERING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setProgramOffering(String programOffering) {
+    this.programOffering = programOffering;
   }
 
 
@@ -1266,7 +1224,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * maximum: 100
    * @return resultWeight
   **/
-  
+ 
   @ApiModelProperty(example = "100", value = "The result weight of this offering")
   @JsonProperty(JSON_PROPERTY_RESULT_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1293,7 +1251,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * Get room
    * @return room
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ROOM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1310,9 +1268,9 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
   }
 
 
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner component(OneOfUUIDComponent component) {
-    this.component = JsonNullable.<OneOfUUIDComponent>of(component);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner component(String component) {
     
+    this.component = component;
     return this;
   }
 
@@ -1320,34 +1278,26 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The component that is offered in this componentoffering. [&#x60;expandable&#x60;](#tag/component_model) By default only the &#x60;componentId&#x60; (a string) is returned. If the client requested an expansion of &#x60;component&#x60; the full component object should be returned. 
    * @return component
   **/
-  
+ 
   @ApiModelProperty(value = "The component that is offered in this componentoffering. [`expandable`](#tag/component_model) By default only the `componentId` (a string) is returned. If the client requested an expansion of `component` the full component object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDComponent getComponent() {
-        return component.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_COMPONENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDComponent> getComponent_JsonNullable() {
+  public String getComponent() {
     return component;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_COMPONENT)
-  public void setComponent_JsonNullable(JsonNullable<OneOfUUIDComponent> component) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setComponent(String component) {
     this.component = component;
   }
 
-  public void setComponent(OneOfUUIDComponent component) {
-    this.component = JsonNullable.<OneOfUUIDComponent>of(component);
-  }
 
-
-  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner courseOffering(OneOfUUIDCourseOffering courseOffering) {
-    this.courseOffering = JsonNullable.<OneOfUUIDCourseOffering>of(courseOffering);
+  public OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner courseOffering(String courseOffering) {
     
+    this.courseOffering = courseOffering;
     return this;
   }
 
@@ -1355,28 +1305,20 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
    * The courseoffering where this componentoffering is related to. [&#x60;expandable&#x60;](#tag/course_offering_model) By default only the &#x60;courseOfferingId&#x60; (a string) is returned. If the client requested an expansion of &#x60;courseOffering&#x60; the full courseOffering object should be returned. 
    * @return courseOffering
   **/
-  
+ 
   @ApiModelProperty(value = "The courseoffering where this componentoffering is related to. [`expandable`](#tag/course_offering_model) By default only the `courseOfferingId` (a string) is returned. If the client requested an expansion of `courseOffering` the full courseOffering object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDCourseOffering getCourseOffering() {
-        return courseOffering.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_COURSE_OFFERING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDCourseOffering> getCourseOffering_JsonNullable() {
+  public String getCourseOffering() {
     return courseOffering;
   }
-  
-  @JsonProperty(JSON_PROPERTY_COURSE_OFFERING)
-  public void setCourseOffering_JsonNullable(JsonNullable<OneOfUUIDCourseOffering> courseOffering) {
-    this.courseOffering = courseOffering;
-  }
 
-  public void setCourseOffering(OneOfUUIDCourseOffering courseOffering) {
-    this.courseOffering = JsonNullable.<OneOfUUIDCourseOffering>of(courseOffering);
+
+  @JsonProperty(JSON_PROPERTY_COURSE_OFFERING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCourseOffering(String courseOffering) {
+    this.courseOffering = courseOffering;
   }
 
 
@@ -1392,7 +1334,7 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
     return Objects.equals(this.offeringId, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.offeringId) &&
         Objects.equals(this.primaryCode, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.primaryCode) &&
         Objects.equals(this.offeringType, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.offeringType) &&
-        equalsNullable(this.academicSession, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.academicSession) &&
+        Objects.equals(this.academicSession, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.academicSession) &&
         Objects.equals(this.name, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.name) &&
         Objects.equals(this.abbreviation, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.abbreviation) &&
         Objects.equals(this.description, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.description) &&
@@ -1416,32 +1358,21 @@ public class OrganizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner {
         Objects.equals(this.flexibleEntryPeriodEnd, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.flexibleEntryPeriodEnd) &&
         Objects.equals(this.addresses, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.addresses) &&
         Objects.equals(this.priceInformation, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.priceInformation) &&
-        equalsNullable(this.program, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.program) &&
-        equalsNullable(this.organization, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.organization) &&
-        equalsNullable(this.course, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.course) &&
-        equalsNullable(this.programOffering, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.programOffering) &&
+        Objects.equals(this.program, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.program) &&
+        Objects.equals(this.organization, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.organization) &&
+        Objects.equals(this.course, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.course) &&
+        Objects.equals(this.programOffering, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.programOffering) &&
         Objects.equals(this.startDateTime, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.startDateTime) &&
         Objects.equals(this.endDateTime, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.endDateTime) &&
         Objects.equals(this.resultWeight, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.resultWeight) &&
         Objects.equals(this.room, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.room) &&
-        equalsNullable(this.component, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.component) &&
-        equalsNullable(this.courseOffering, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.courseOffering);
-  }
-
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        Objects.equals(this.component, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.component) &&
+        Objects.equals(this.courseOffering, organizationsOrganizationIdOfferingsGet200ResponseAllOfItemsInner.courseOffering);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(offeringId, primaryCode, offeringType, hashCodeNullable(academicSession), name, abbreviation, description, teachingLanguage, modeOfDelivery, maxNumberStudents, enrolledNumberStudents, pendingNumberStudents, minNumberStudents, resultExpected, resultValueType, link, otherCodes, consumers, ext, startDate, endDate, enrollStartDate, enrollEndDate, flexibleEntryPeriodStart, flexibleEntryPeriodEnd, addresses, priceInformation, hashCodeNullable(program), hashCodeNullable(organization), hashCodeNullable(course), hashCodeNullable(programOffering), startDateTime, endDateTime, resultWeight, room, hashCodeNullable(component), hashCodeNullable(courseOffering));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(offeringId, primaryCode, offeringType, academicSession, name, abbreviation, description, teachingLanguage, modeOfDelivery, maxNumberStudents, enrolledNumberStudents, pendingNumberStudents, minNumberStudents, resultExpected, resultValueType, link, otherCodes, consumers, ext, startDate, endDate, enrollStartDate, enrollEndDate, flexibleEntryPeriodStart, flexibleEntryPeriodEnd, addresses, priceInformation, program, organization, course, programOffering, startDateTime, endDateTime, resultWeight, room, component, courseOffering);
   }
 
   @Override

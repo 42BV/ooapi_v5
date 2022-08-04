@@ -47,7 +47,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   AcademicSession.JSON_PROPERTY_CONSUMERS,
   AcademicSession.JSON_PROPERTY_EXT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AcademicSession {
   public static final String JSON_PROPERTY_ACADEMIC_SESSION_ID = "academicSessionId";
   private UUID academicSessionId;
@@ -122,7 +122,7 @@ public class AcademicSession {
    * The type of this Academic Session This is an *extensible enumeration*. - academic year: academic year - semester: semester, typically there are two semesters per academic year - trimester: trimester, typically there are three semesters per academic year - quarter: quarter, typically there are four quarters per academic year - testing period: a period in which tests take place - period: any other period in an academic year  Implementations are allowed to add additional values to those above, as long as they do not overlap in definition to existing values. 
    * @return academicSessionType
   **/
-  
+ 
   @ApiModelProperty(example = "semester", value = "The type of this Academic Session This is an *extensible enumeration*. - academic year: academic year - semester: semester, typically there are two semesters per academic year - trimester: trimester, typically there are three semesters per academic year - quarter: quarter, typically there are four quarters per academic year - testing period: a period in which tests take place - period: any other period in an academic year  Implementations are allowed to add additional values to those above, as long as they do not overlap in definition to existing values. ")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,7 +149,7 @@ public class AcademicSession {
    * Get primaryCode
    * @return primaryCode
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PRIMARY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -262,7 +262,7 @@ public class AcademicSession {
    * Get parent
    * @return parent
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -297,7 +297,7 @@ public class AcademicSession {
    * The list of Academicsession children of this Session (e.g. all academic sessions in fall semester 20xx). This object is [&#x60;expandable&#x60;](#tag/academic_sessions_model)
    * @return children
   **/
-  
+ 
   @ApiModelProperty(value = "The list of Academicsession children of this Session (e.g. all academic sessions in fall semester 20xx). This object is [`expandable`](#tag/academic_sessions_model)")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -324,7 +324,7 @@ public class AcademicSession {
    * Get year
    * @return year
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_YEAR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -359,7 +359,7 @@ public class AcademicSession {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+ 
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -394,7 +394,7 @@ public class AcademicSession {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -421,7 +421,7 @@ public class AcademicSession {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

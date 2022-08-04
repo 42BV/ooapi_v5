@@ -15,6 +15,8 @@ package nl.vorsen.ooapi;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -31,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   Problem.JSON_PROPERTY_TITLE,
   Problem.JSON_PROPERTY_DETAIL
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class Problem {
   public static final String JSON_PROPERTY_STATUS = "status";
   private String status;
@@ -109,7 +111,7 @@ public class Problem {
    * A human-readable explanation specific to this occurrence of the problem
    * @return detail
   **/
-  
+ 
   @ApiModelProperty(value = "A human-readable explanation specific to this occurrence of the problem")
   @JsonProperty(JSON_PROPERTY_DETAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

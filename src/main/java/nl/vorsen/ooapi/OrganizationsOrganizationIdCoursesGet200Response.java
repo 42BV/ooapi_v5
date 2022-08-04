@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -37,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   OrganizationsOrganizationIdCoursesGet200Response.JSON_PROPERTY_EXT
 })
 @JsonTypeName("_organizations__organizationId__courses_get_200_response")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class OrganizationsOrganizationIdCoursesGet200Response {
   public static final String JSON_PROPERTY_PAGE_SIZE = "pageSize";
   private Integer pageSize;
@@ -182,7 +184,7 @@ public class OrganizationsOrganizationIdCoursesGet200Response {
    * Total number of pages
    * @return totalPages
   **/
-
+ 
   @ApiModelProperty(example = "8", value = "Total number of pages")
   @JsonProperty(JSON_PROPERTY_TOTAL_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -241,7 +243,7 @@ public class OrganizationsOrganizationIdCoursesGet200Response {
    * Object for additional non-standard attributes
    * @return ext
   **/
-
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

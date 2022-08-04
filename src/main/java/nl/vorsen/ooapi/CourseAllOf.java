@@ -31,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CourseAllOf.JSON_PROPERTY_VALID_TO
 })
 @JsonTypeName("Course_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class CourseAllOf {
   public static final String JSON_PROPERTY_VALID_FROM = "validFrom";
   private LocalDate validFrom;
@@ -52,7 +52,7 @@ public class CourseAllOf {
    * The first day this course is valid (inclusive).
    * @return validFrom
   **/
-  
+ 
   @ApiModelProperty(value = "The first day this course is valid (inclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,7 +79,7 @@ public class CourseAllOf {
    * The day this course ceases to be valid (e.g. exclusive).
    * @return validTo
   **/
-  
+ 
   @ApiModelProperty(value = "The day this course ceases to be valid (e.g. exclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

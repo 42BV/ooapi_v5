@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ProgramExpandedAllOf.JSON_PROPERTY_TIMELINE_OVERRIDES
 })
 @JsonTypeName("ProgramExpanded_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class ProgramExpandedAllOf {
   public static final String JSON_PROPERTY_TIMELINE_OVERRIDES = "timelineOverrides";
   private List<TimelineOverrideProgram> timelineOverrides = null;
@@ -59,7 +59,7 @@ public class ProgramExpandedAllOf {
    * Timeline overrides allow an implementation to provide versions of entities that will be valid in the future or have been in the past.
    * @return timelineOverrides
   **/
-
+ 
   @ApiModelProperty(value = "Timeline overrides allow an implementation to provide versions of entities that will be valid in the future or have been in the past.")
   @JsonProperty(JSON_PROPERTY_TIMELINE_OVERRIDES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

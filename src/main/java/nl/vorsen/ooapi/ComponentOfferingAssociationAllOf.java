@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ComponentOfferingAssociationAllOf.JSON_PROPERTY_RESULT
 })
 @JsonTypeName("ComponentOfferingAssociation_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class ComponentOfferingAssociationAllOf {
   public static final String JSON_PROPERTY_RESULT = "result";
   private ComponentResult result;
@@ -47,7 +47,7 @@ public class ComponentOfferingAssociationAllOf {
    * Get result
    * @return result
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

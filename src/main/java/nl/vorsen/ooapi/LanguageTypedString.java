@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   LanguageTypedString.JSON_PROPERTY_LANGUAGE,
   LanguageTypedString.JSON_PROPERTY_VALUE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class LanguageTypedString {
   public static final String JSON_PROPERTY_LANGUAGE = "language";
   private String language;
@@ -51,7 +51,7 @@ public class LanguageTypedString {
    * The language used in the described entity. A string formatted according to RFC3066.
    * @return language
   **/
-  
+ 
   @ApiModelProperty(value = "The language used in the described entity. A string formatted according to RFC3066.")
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,7 +78,7 @@ public class LanguageTypedString {
    * String to describe the entity.
    * @return value
   **/
-  
+ 
   @ApiModelProperty(value = "String to describe the entity.")
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

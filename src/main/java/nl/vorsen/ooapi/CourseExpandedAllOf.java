@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   CourseExpandedAllOf.JSON_PROPERTY_TIMELINE_OVERRIDES
 })
 @JsonTypeName("CourseExpanded_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class CourseExpandedAllOf {
   public static final String JSON_PROPERTY_TIMELINE_OVERRIDES = "timelineOverrides";
   private List<TimelineOverrideCourse> timelineOverrides = null;

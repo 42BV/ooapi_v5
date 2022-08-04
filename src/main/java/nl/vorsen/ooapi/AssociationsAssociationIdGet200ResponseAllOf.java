@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AssociationsAssociationIdGet200ResponseAllOf.JSON_PROPERTY_STATE
 })
 @JsonTypeName("_associations__associationId__get_200_response_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationsAssociationIdGet200ResponseAllOf {
   public static final String JSON_PROPERTY_STATE = "state";
   private AssociationState state;
@@ -47,7 +47,7 @@ public class AssociationsAssociationIdGet200ResponseAllOf {
    * Get state
    * @return state
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

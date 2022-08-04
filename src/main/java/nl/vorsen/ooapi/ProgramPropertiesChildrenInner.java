@@ -20,6 +20,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -70,7 +72,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
   ProgramPropertiesChildrenInner.JSON_PROPERTY_VALID_TO
 })
 @JsonTypeName("ProgramProperties_children_inner")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class ProgramPropertiesChildrenInner {
   public static final String JSON_PROPERTY_PROGRAM_ID = "programId";
   private UUID programId;
@@ -427,7 +429,7 @@ public class ProgramPropertiesChildrenInner {
    * Get studyLoad
    * @return studyLoad
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_STUDY_LOAD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -454,7 +456,7 @@ public class ProgramPropertiesChildrenInner {
    * Get qualificationAwarded
    * @return qualificationAwarded
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_QUALIFICATION_AWARDED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -481,7 +483,7 @@ public class ProgramPropertiesChildrenInner {
    * Get modeOfStudy
    * @return modeOfStudy
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_MODE_OF_STUDY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -516,7 +518,7 @@ public class ProgramPropertiesChildrenInner {
    * The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie 
    * @return modeOfDelivery
   **/
-  
+ 
   @ApiModelProperty(value = "The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie ")
   @JsonProperty(JSON_PROPERTY_MODE_OF_DELIVERY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -543,7 +545,7 @@ public class ProgramPropertiesChildrenInner {
    * The duration of this program. The duration format is from the ISO 8601 ABNF as given in Appendix A of RFC 3339.
    * @return duration
   **/
-  
+ 
   @ApiModelProperty(example = "P1DT30H4S", value = "The duration of this program. The duration format is from the ISO 8601 ABNF as given in Appendix A of RFC 3339.")
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -570,7 +572,7 @@ public class ProgramPropertiesChildrenInner {
    * The date when participants can follow this program for the first time.
    * @return firstStartDate
   **/
-  
+ 
   @ApiModelProperty(value = "The date when participants can follow this program for the first time.")
   @JsonProperty(JSON_PROPERTY_FIRST_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -597,7 +599,7 @@ public class ProgramPropertiesChildrenInner {
    * Get levelOfQualification
    * @return levelOfQualification
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_LEVEL_OF_QUALIFICATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -624,7 +626,7 @@ public class ProgramPropertiesChildrenInner {
    * Get level
    * @return level
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_LEVEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -651,7 +653,7 @@ public class ProgramPropertiesChildrenInner {
    * Get sector
    * @return sector
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_SECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -678,7 +680,7 @@ public class ProgramPropertiesChildrenInner {
    * Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.
    * @return fieldsOfStudy
   **/
-  
+ 
   @ApiModelProperty(example = "0732", value = "Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.")
   @JsonProperty(JSON_PROPERTY_FIELDS_OF_STUDY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -713,7 +715,7 @@ public class ProgramPropertiesChildrenInner {
    * The extra information that is provided for enrollment
    * @return enrollment
   **/
-  
+ 
   @ApiModelProperty(example = "[{language=en-GB, value=enrollment through SIS. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.}]", value = "The extra information that is provided for enrollment")
   @JsonProperty(JSON_PROPERTY_ENROLLMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -748,7 +750,7 @@ public class ProgramPropertiesChildrenInner {
    * An overview of the literature and other resources that is used in this course (ECTS-recommended reading and other sources)
    * @return resources
   **/
-  
+ 
   @ApiModelProperty(example = "[book to be announced, on-line resource x]", value = "An overview of the literature and other resources that is used in this course (ECTS-recommended reading and other sources)")
   @JsonProperty(JSON_PROPERTY_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -783,7 +785,7 @@ public class ProgramPropertiesChildrenInner {
    * List of learning outcomes at program level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the program learning outcomes in the course catalogue correspond with those on the Diploma Supplement.
    * @return learningOutcomes
   **/
-  
+ 
   @ApiModelProperty(value = "List of learning outcomes at program level. It is advisable to limit the number of learning outcomes to approximately 20. It is also advisable to make sure that the program learning outcomes in the course catalogue correspond with those on the Diploma Supplement.")
   @JsonProperty(JSON_PROPERTY_LEARNING_OUTCOMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -818,7 +820,7 @@ public class ProgramPropertiesChildrenInner {
    * A description of the way exams for this course are taken (ECTS-assessment method and criteria).
    * @return assessment
   **/
-  
+ 
   @ApiModelProperty(example = "[{language=en-GB, value=Exam on campus}]", value = "A description of the way exams for this course are taken (ECTS-assessment method and criteria).")
   @JsonProperty(JSON_PROPERTY_ASSESSMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -853,7 +855,7 @@ public class ProgramPropertiesChildrenInner {
    * This information may be given at an institutional level and/or at the level of individual programmes. Make sure that it is clear whether the information applies to fee-paying students (national and/or international) or to exchange students.
    * @return admissionRequirements
   **/
-  
+ 
   @ApiModelProperty(example = "[{language=en-GB, value=Students need to be enrolled at qualifying institutions of higher education that participate in this alliance}]", value = "This information may be given at an institutional level and/or at the level of individual programmes. Make sure that it is clear whether the information applies to fee-paying students (national and/or international) or to exchange students.")
   @JsonProperty(JSON_PROPERTY_ADMISSION_REQUIREMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -888,7 +890,7 @@ public class ProgramPropertiesChildrenInner {
    * Normally, students will receive a diploma when they have completed the (official) study program and have obtained the required number of credits. If there are any other specific requirements that students need to have fulfilled, mention them here.
    * @return qualificationRequirements
   **/
-  
+ 
   @ApiModelProperty(value = "Normally, students will receive a diploma when they have completed the (official) study program and have obtained the required number of credits. If there are any other specific requirements that students need to have fulfilled, mention them here.")
   @JsonProperty(JSON_PROPERTY_QUALIFICATION_REQUIREMENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -915,7 +917,7 @@ public class ProgramPropertiesChildrenInner {
    * URL of the program&#39;s website
    * @return link
   **/
-  
+ 
   @ApiModelProperty(example = "https://bijvak.nl", value = "URL of the program's website")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -942,7 +944,7 @@ public class ProgramPropertiesChildrenInner {
    * Get educationSpecification
    * @return educationSpecification
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_EDUCATION_SPECIFICATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -977,7 +979,7 @@ public class ProgramPropertiesChildrenInner {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+ 
   @ApiModelProperty(example = "[{codeType=crohoCreboCode, code=59312}]", value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1012,7 +1014,7 @@ public class ProgramPropertiesChildrenInner {
    * Addresses for this program
    * @return addresses
   **/
-  
+ 
   @ApiModelProperty(value = "Addresses for this program")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1039,7 +1041,7 @@ public class ProgramPropertiesChildrenInner {
    * Get parent
    * @return parent
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1074,7 +1076,7 @@ public class ProgramPropertiesChildrenInner {
    * Programs which are a part of this program (e.g specializations). This object is [&#x60;expandable&#x60;](#tag/program_model)
    * @return children
   **/
-  
+ 
   @ApiModelProperty(value = "Programs which are a part of this program (e.g specializations). This object is [`expandable`](#tag/program_model)")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1109,7 +1111,7 @@ public class ProgramPropertiesChildrenInner {
    * The person(s) responsible for this program. This object is [&#x60;expandable&#x60;](#tag/person_model)
    * @return coordinators
   **/
-  
+ 
   @ApiModelProperty(value = "The person(s) responsible for this program. This object is [`expandable`](#tag/person_model)")
   @JsonProperty(JSON_PROPERTY_COORDINATORS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1136,7 +1138,7 @@ public class ProgramPropertiesChildrenInner {
    * Get organization
    * @return organization
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1171,7 +1173,7 @@ public class ProgramPropertiesChildrenInner {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/RIO/V1/examples/Program.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1198,7 +1200,7 @@ public class ProgramPropertiesChildrenInner {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1225,7 +1227,7 @@ public class ProgramPropertiesChildrenInner {
    * The first day this program is valid (inclusive).
    * @return validFrom
   **/
-  
+ 
   @ApiModelProperty(value = "The first day this program is valid (inclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1252,7 +1254,7 @@ public class ProgramPropertiesChildrenInner {
    * The day this program ceases to be valid (e.g. exclusive).
    * @return validTo
   **/
-  
+ 
   @ApiModelProperty(value = "The day this program ceases to be valid (e.g. exclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
   StudyLoadDescriptor.JSON_PROPERTY_STUDY_LOAD_UNIT,
   StudyLoadDescriptor.JSON_PROPERTY_VALUE
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class StudyLoadDescriptor {
   /**
    * The unit in which the studyload is specfied - contacttime: CONTACTUUR amount of time spent in classes - ects: ECTS_PUNT European Credit Transfer System - sbu: SBU studentloadhours - sp: STUDIEPUNT studentpoints - hour: UUR hours 
@@ -95,7 +95,7 @@ public class StudyLoadDescriptor {
    * The unit in which the studyload is specfied - contacttime: CONTACTUUR amount of time spent in classes - ects: ECTS_PUNT European Credit Transfer System - sbu: SBU studentloadhours - sp: STUDIEPUNT studentpoints - hour: UUR hours 
    * @return studyLoadUnit
   **/
-  
+ 
   @ApiModelProperty(example = "ects", value = "The unit in which the studyload is specfied - contacttime: CONTACTUUR amount of time spent in classes - ects: ECTS_PUNT European Credit Transfer System - sbu: SBU studentloadhours - sp: STUDIEPUNT studentpoints - hour: UUR hours ")
   @JsonProperty(JSON_PROPERTY_STUDY_LOAD_UNIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +122,7 @@ public class StudyLoadDescriptor {
    * The amount of load depicted in numbers
    * @return value
   **/
-  
+ 
   @ApiModelProperty(example = "3", value = "The amount of load depicted in numbers")
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

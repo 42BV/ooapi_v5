@@ -19,6 +19,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -37,7 +39,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AssociationsAssociationIdGet200Response.JSON_PROPERTY_STATE
 })
 @JsonTypeName("_associations__associationId__get_200_response")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationsAssociationIdGet200Response {
   public static final String JSON_PROPERTY_ASSOCIATION_ID = "associationId";
   private UUID associationId;
@@ -120,7 +122,7 @@ public class AssociationsAssociationIdGet200Response {
    * URL where additional information can be found e.g. by use of deeplink
    * @return redirect
   **/
-  
+
   @ApiModelProperty(value = "URL where additional information can be found e.g. by use of deeplink")
   @JsonProperty(JSON_PROPERTY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -147,7 +149,7 @@ public class AssociationsAssociationIdGet200Response {
    * Get state
    * @return state
   **/
-  
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

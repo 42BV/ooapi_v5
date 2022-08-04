@@ -15,6 +15,8 @@ package nl.vorsen.ooapi;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -29,7 +31,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ComponentResultAllOf.JSON_PROPERTY_WEIGHT
 })
 @JsonTypeName("ComponentResult_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class ComponentResultAllOf {
   public static final String JSON_PROPERTY_WEIGHT = "weight";
   private Integer weight;

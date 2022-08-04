@@ -16,15 +16,13 @@ package nl.vorsen.ooapi;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
-import org.openapitools.jackson.nullable.JsonNullable;
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -48,7 +46,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   ComponentOfferingAllOf.JSON_PROPERTY_ACADEMIC_SESSION
 })
 @JsonTypeName("ComponentOffering_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class ComponentOfferingAllOf {
   public static final String JSON_PROPERTY_START_DATE_TIME = "startDateTime";
   private OffsetDateTime startDateTime;
@@ -75,16 +73,16 @@ public class ComponentOfferingAllOf {
   private Room room;
 
   public static final String JSON_PROPERTY_COMPONENT = "component";
-  private JsonNullable<OneOfUUIDComponent> component = JsonNullable.<OneOfUUIDComponent>undefined();
+  private String component;
 
   public static final String JSON_PROPERTY_COURSE_OFFERING = "courseOffering";
-  private JsonNullable<OneOfUUIDCourseOffering> courseOffering = JsonNullable.<OneOfUUIDCourseOffering>undefined();
+  private String courseOffering;
 
   public static final String JSON_PROPERTY_ORGANIZATION = "organization";
-  private JsonNullable<OneOfUUIDOrganization> organization = JsonNullable.<OneOfUUIDOrganization>undefined();
+  private String organization;
 
   public static final String JSON_PROPERTY_ACADEMIC_SESSION = "academicSession";
-  private JsonNullable<OneOfUUIDAcademicSession> academicSession = JsonNullable.<OneOfUUIDAcademicSession>undefined();
+  private String academicSession;
 
   public ComponentOfferingAllOf() { 
   }
@@ -153,7 +151,7 @@ public class ComponentOfferingAllOf {
    * The first day on which a student can enroll for this course.
    * @return enrollStartDate
   **/
-
+ 
   @ApiModelProperty(value = "The first day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -180,7 +178,7 @@ public class ComponentOfferingAllOf {
    * The last day on which a student can enroll for this course.
    * @return enrollEndDate
   **/
-
+ 
   @ApiModelProperty(value = "The last day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -209,7 +207,7 @@ public class ComponentOfferingAllOf {
    * maximum: 100
    * @return resultWeight
   **/
-
+ 
   @ApiModelProperty(example = "100", value = "The result weight of this offering")
   @JsonProperty(JSON_PROPERTY_RESULT_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,7 +242,7 @@ public class ComponentOfferingAllOf {
    * Addresses for this offering
    * @return addresses
   **/
-
+ 
   @ApiModelProperty(value = "Addresses for this offering")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -279,7 +277,7 @@ public class ComponentOfferingAllOf {
    * Price information for this offering.
    * @return priceInformation
   **/
-
+ 
   @ApiModelProperty(value = "Price information for this offering.")
   @JsonProperty(JSON_PROPERTY_PRICE_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -306,7 +304,7 @@ public class ComponentOfferingAllOf {
    * Get room
    * @return room
   **/
-
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ROOM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -323,9 +321,9 @@ public class ComponentOfferingAllOf {
   }
 
 
-  public ComponentOfferingAllOf component(OneOfUUIDComponent component) {
-    this.component = JsonNullable.<OneOfUUIDComponent>of(component);
+  public ComponentOfferingAllOf component(String component) {
     
+    this.component = component;
     return this;
   }
 
@@ -333,34 +331,26 @@ public class ComponentOfferingAllOf {
    * The component that is offered in this componentoffering. [&#x60;expandable&#x60;](#tag/component_model) By default only the &#x60;componentId&#x60; (a string) is returned. If the client requested an expansion of &#x60;component&#x60; the full component object should be returned. 
    * @return component
   **/
-
+ 
   @ApiModelProperty(value = "The component that is offered in this componentoffering. [`expandable`](#tag/component_model) By default only the `componentId` (a string) is returned. If the client requested an expansion of `component` the full component object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDComponent getComponent() {
-        return component.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_COMPONENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDComponent> getComponent_JsonNullable() {
+  public String getComponent() {
     return component;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_COMPONENT)
-  public void setComponent_JsonNullable(JsonNullable<OneOfUUIDComponent> component) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setComponent(String component) {
     this.component = component;
   }
 
-  public void setComponent(OneOfUUIDComponent component) {
-    this.component = JsonNullable.<OneOfUUIDComponent>of(component);
-  }
 
-
-  public ComponentOfferingAllOf courseOffering(OneOfUUIDCourseOffering courseOffering) {
-    this.courseOffering = JsonNullable.<OneOfUUIDCourseOffering>of(courseOffering);
+  public ComponentOfferingAllOf courseOffering(String courseOffering) {
     
+    this.courseOffering = courseOffering;
     return this;
   }
 
@@ -368,34 +358,26 @@ public class ComponentOfferingAllOf {
    * The courseoffering where this componentoffering is related to. [&#x60;expandable&#x60;](#tag/course_offering_model) By default only the &#x60;courseOfferingId&#x60; (a string) is returned. If the client requested an expansion of &#x60;courseOffering&#x60; the full courseOffering object should be returned. 
    * @return courseOffering
   **/
-
+ 
   @ApiModelProperty(value = "The courseoffering where this componentoffering is related to. [`expandable`](#tag/course_offering_model) By default only the `courseOfferingId` (a string) is returned. If the client requested an expansion of `courseOffering` the full courseOffering object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDCourseOffering getCourseOffering() {
-        return courseOffering.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_COURSE_OFFERING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDCourseOffering> getCourseOffering_JsonNullable() {
+  public String getCourseOffering() {
     return courseOffering;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_COURSE_OFFERING)
-  public void setCourseOffering_JsonNullable(JsonNullable<OneOfUUIDCourseOffering> courseOffering) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setCourseOffering(String courseOffering) {
     this.courseOffering = courseOffering;
   }
 
-  public void setCourseOffering(OneOfUUIDCourseOffering courseOffering) {
-    this.courseOffering = JsonNullable.<OneOfUUIDCourseOffering>of(courseOffering);
-  }
 
-
-  public ComponentOfferingAllOf organization(OneOfUUIDOrganization organization) {
-    this.organization = JsonNullable.<OneOfUUIDOrganization>of(organization);
+  public ComponentOfferingAllOf organization(String organization) {
     
+    this.organization = organization;
     return this;
   }
 
@@ -403,34 +385,26 @@ public class ComponentOfferingAllOf {
    * The organization that manages this componentoffering. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return organization
   **/
-
+ 
   @ApiModelProperty(value = "The organization that manages this componentoffering. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDOrganization getOrganization() {
-        return organization.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDOrganization> getOrganization_JsonNullable() {
+  public String getOrganization() {
     return organization;
   }
-  
+
+
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
-  public void setOrganization_JsonNullable(JsonNullable<OneOfUUIDOrganization> organization) {
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setOrganization(String organization) {
     this.organization = organization;
   }
 
-  public void setOrganization(OneOfUUIDOrganization organization) {
-    this.organization = JsonNullable.<OneOfUUIDOrganization>of(organization);
-  }
 
-
-  public ComponentOfferingAllOf academicSession(OneOfUUIDAcademicSession academicSession) {
-    this.academicSession = JsonNullable.<OneOfUUIDAcademicSession>of(academicSession);
+  public ComponentOfferingAllOf academicSession(String academicSession) {
     
+    this.academicSession = academicSession;
     return this;
   }
 
@@ -438,28 +412,20 @@ public class ComponentOfferingAllOf {
    * The academicsession during which this componentoffering takes place. [&#x60;expandable&#x60;](#tag/academic_session_model) By default only the &#x60;academicSessionId&#x60; (a string) is returned. If the client requested an expansion of &#x60;academicSession&#x60; the full academicsession object should be returned. 
    * @return academicSession
   **/
-
+ 
   @ApiModelProperty(value = "The academicsession during which this componentoffering takes place. [`expandable`](#tag/academic_session_model) By default only the `academicSessionId` (a string) is returned. If the client requested an expansion of `academicSession` the full academicsession object should be returned. ")
-  @JsonIgnore
-
-  public OneOfUUIDAcademicSession getAcademicSession() {
-        return academicSession.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDAcademicSession> getAcademicSession_JsonNullable() {
+  public String getAcademicSession() {
     return academicSession;
   }
-  
-  @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
-  public void setAcademicSession_JsonNullable(JsonNullable<OneOfUUIDAcademicSession> academicSession) {
-    this.academicSession = academicSession;
-  }
 
-  public void setAcademicSession(OneOfUUIDAcademicSession academicSession) {
-    this.academicSession = JsonNullable.<OneOfUUIDAcademicSession>of(academicSession);
+
+  @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setAcademicSession(String academicSession) {
+    this.academicSession = academicSession;
   }
 
 
@@ -480,26 +446,15 @@ public class ComponentOfferingAllOf {
         Objects.equals(this.addresses, componentOfferingAllOf.addresses) &&
         Objects.equals(this.priceInformation, componentOfferingAllOf.priceInformation) &&
         Objects.equals(this.room, componentOfferingAllOf.room) &&
-        equalsNullable(this.component, componentOfferingAllOf.component) &&
-        equalsNullable(this.courseOffering, componentOfferingAllOf.courseOffering) &&
-        equalsNullable(this.organization, componentOfferingAllOf.organization) &&
-        equalsNullable(this.academicSession, componentOfferingAllOf.academicSession);
-  }
-
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
+        Objects.equals(this.component, componentOfferingAllOf.component) &&
+        Objects.equals(this.courseOffering, componentOfferingAllOf.courseOffering) &&
+        Objects.equals(this.organization, componentOfferingAllOf.organization) &&
+        Objects.equals(this.academicSession, componentOfferingAllOf.academicSession);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(startDateTime, endDateTime, enrollStartDate, enrollEndDate, resultWeight, addresses, priceInformation, room, hashCodeNullable(component), hashCodeNullable(courseOffering), hashCodeNullable(organization), hashCodeNullable(academicSession));
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(startDateTime, endDateTime, enrollStartDate, enrollEndDate, resultWeight, addresses, priceInformation, room, component, courseOffering, organization, academicSession);
   }
 
   @Override

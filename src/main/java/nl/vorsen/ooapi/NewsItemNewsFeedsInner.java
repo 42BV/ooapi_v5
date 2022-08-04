@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
@@ -39,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
   NewsItemNewsFeedsInner.JSON_PROPERTY_EXT
 })
 @JsonTypeName("NewsItem_newsFeeds_inner")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class NewsItemNewsFeedsInner {
   public static final String JSON_PROPERTY_NEWS_FEED_ID = "newsFeedId";
   private UUID newsFeedId;
@@ -243,7 +245,7 @@ public class NewsItemNewsFeedsInner {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-
+ 
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -270,7 +272,7 @@ public class NewsItemNewsFeedsInner {
    * Object for additional non-standard attributes
    * @return ext
   **/
-
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

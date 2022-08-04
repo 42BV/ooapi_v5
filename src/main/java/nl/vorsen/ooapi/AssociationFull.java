@@ -14,17 +14,15 @@
 package nl.vorsen.ooapi;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
-import org.openapitools.jackson.nullable.JsonNullable;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -45,13 +43,13 @@ import com.fasterxml.jackson.annotation.JsonValue;
   AssociationFull.JSON_PROPERTY_EXT,
   AssociationFull.JSON_PROPERTY_RESULT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationFull {
   public static final String JSON_PROPERTY_PERSON = "person";
-  private JsonNullable<OneOfUUIDPerson> person = JsonNullable.<OneOfUUIDPerson>undefined();
+  private String person;
 
   public static final String JSON_PROPERTY_OFFERING = "offering";
-  private JsonNullable<OneOfUUIDComponentOfferingCourseOfferingProgramOffering> offering = JsonNullable.<OneOfUUIDComponentOfferingCourseOfferingProgramOffering>undefined();
+  private String offering;
 
   public static final String JSON_PROPERTY_ASSOCIATION_ID = "associationId";
   private UUID associationId;
@@ -119,7 +117,7 @@ public class AssociationFull {
 
   @JsonCreator
   public AssociationFull(
-    @JsonProperty(JSON_PROPERTY_PERSON) OneOfUUIDPerson person, 
+    @JsonProperty(JSON_PROPERTY_PERSON) String person,
     @JsonProperty(JSON_PROPERTY_ASSOCIATION_ID) UUID associationId, 
     @JsonProperty(JSON_PROPERTY_ASSOCIATION_TYPE) AssociationTypeEnum associationType
   ) {
@@ -133,35 +131,21 @@ public class AssociationFull {
    * Get person
    * @return person
   **/
-  
+ 
   @ApiModelProperty(value = "")
-  @JsonIgnore
-
-  public OneOfUUIDPerson getPerson() {
-    
-    if (person == null) {
-      person = JsonNullable.<OneOfUUIDPerson>undefined();
-    }
-    return person.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_PERSON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDPerson> getPerson_JsonNullable() {
+  public String getPerson() {
     return person;
   }
-  
-  @JsonProperty(JSON_PROPERTY_PERSON)
-  private void setPerson_JsonNullable(JsonNullable<OneOfUUIDPerson> person) {
-    this.person = person;
-  }
 
 
 
-  public AssociationFull offering(OneOfUUIDComponentOfferingCourseOfferingProgramOffering offering) {
-    this.offering = JsonNullable.<OneOfUUIDComponentOfferingCourseOfferingProgramOffering>of(offering);
+
+  public AssociationFull offering(String offering) {
     
+    this.offering = offering;
     return this;
   }
 
@@ -169,28 +153,20 @@ public class AssociationFull {
    * Get offering
    * @return offering
   **/
-  
+ 
   @ApiModelProperty(value = "")
-  @JsonIgnore
-
-  public OneOfUUIDComponentOfferingCourseOfferingProgramOffering getOffering() {
-        return offering.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_OFFERING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfUUIDComponentOfferingCourseOfferingProgramOffering> getOffering_JsonNullable() {
+  public String getOffering() {
     return offering;
   }
-  
-  @JsonProperty(JSON_PROPERTY_OFFERING)
-  public void setOffering_JsonNullable(JsonNullable<OneOfUUIDComponentOfferingCourseOfferingProgramOffering> offering) {
-    this.offering = offering;
-  }
 
-  public void setOffering(OneOfUUIDComponentOfferingCourseOfferingProgramOffering offering) {
-    this.offering = JsonNullable.<OneOfUUIDComponentOfferingCourseOfferingProgramOffering>of(offering);
+
+  @JsonProperty(JSON_PROPERTY_OFFERING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setOffering(String offering) {
+    this.offering = offering;
   }
 
 
@@ -290,7 +266,7 @@ public class AssociationFull {
    * Get remoteState
    * @return remoteState
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_REMOTE_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -325,7 +301,7 @@ public class AssociationFull {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -352,7 +328,7 @@ public class AssociationFull {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -379,7 +355,7 @@ public class AssociationFull {
    * Get result
    * @return result
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -405,8 +381,8 @@ public class AssociationFull {
       return false;
     }
     AssociationFull associationFull = (AssociationFull) o;
-    return equalsNullable(this.person, associationFull.person) &&
-        equalsNullable(this.offering, associationFull.offering) &&
+    return Objects.equals(this.person, associationFull.person) &&
+        Objects.equals(this.offering, associationFull.offering) &&
         Objects.equals(this.associationId, associationFull.associationId) &&
         Objects.equals(this.associationType, associationFull.associationType) &&
         Objects.equals(this.role, associationFull.role) &&
@@ -417,20 +393,9 @@ public class AssociationFull {
         Objects.equals(this.result, associationFull.result);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
-    return Objects.hash(hashCodeNullable(person), hashCodeNullable(offering), associationId, associationType, role, state, remoteState, consumers, ext, result);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(person, offering, associationId, associationType, role, state, remoteState, consumers, ext, result);
   }
 
   @Override

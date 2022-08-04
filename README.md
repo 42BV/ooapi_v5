@@ -4,7 +4,7 @@
 - Unzip the files
 - Run: 
 ```bash
-openapi-generator generate -i specification-master/v5/spec.yaml -g java -o openapi --skip-validate-spec --global-property models --additional-properties=library=webclient`
+openapi-generator generate -i specification-master/v5/spec.yaml -g java -o openapi --skip-validate-spec --global-property models --additional-properties=library=resttemplate,generateSupportingFiles=false,openApiNullable=false
 ````
 - info on webclients: https://openapi-generator.tech/docs/generators/java/
 - config: https://openapi-generator.tech/docs/configuration/

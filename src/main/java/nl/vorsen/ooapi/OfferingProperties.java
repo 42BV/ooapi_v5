@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -52,7 +54,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
   OfferingProperties.JSON_PROPERTY_CONSUMERS,
   OfferingProperties.JSON_PROPERTY_EXT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class OfferingProperties {
   public static final String JSON_PROPERTY_PRIMARY_CODE = "primaryCode";
   private IdentifierEntry primaryCode;
@@ -253,7 +255,7 @@ public class OfferingProperties {
    * Get academicSession
    * @return academicSession
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -312,7 +314,7 @@ public class OfferingProperties {
    * The abbreviation or internal code used to identify this offering
    * @return abbreviation
   **/
-  
+ 
   @ApiModelProperty(example = "Test-INFOMQNM-20FS", value = "The abbreviation or internal code used to identify this offering")
   @JsonProperty(JSON_PROPERTY_ABBREVIATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -406,7 +408,7 @@ public class OfferingProperties {
    * The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie 
    * @return modeOfDelivery
   **/
-  
+ 
   @ApiModelProperty(value = "The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie ")
   @JsonProperty(JSON_PROPERTY_MODE_OF_DELIVERY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -434,7 +436,7 @@ public class OfferingProperties {
    * minimum: 0
    * @return maxNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "200", value = "The maximum number of students allowed to enroll for this offering")
   @JsonProperty(JSON_PROPERTY_MAX_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -462,7 +464,7 @@ public class OfferingProperties {
    * minimum: 0
    * @return enrolledNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "150", value = "The number of students that have already enrolled for this offering")
   @JsonProperty(JSON_PROPERTY_ENROLLED_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -490,7 +492,7 @@ public class OfferingProperties {
    * minimum: 0
    * @return pendingNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "50", value = "The number of students that have a pending enrollment request for this offering")
   @JsonProperty(JSON_PROPERTY_PENDING_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -518,7 +520,7 @@ public class OfferingProperties {
    * minimum: 0
    * @return minNumberStudents
   **/
-  
+ 
   @ApiModelProperty(example = "15", value = "The minimum number of students needed for this offering to proceed")
   @JsonProperty(JSON_PROPERTY_MIN_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -572,7 +574,7 @@ public class OfferingProperties {
    * Get resultValueType
    * @return resultValueType
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT_VALUE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -599,7 +601,7 @@ public class OfferingProperties {
    * URL of this offering&#39;s webpage.
    * @return link
   **/
-  
+ 
   @ApiModelProperty(example = "https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusZoekCursus.do#submitForm?cursuscode=INFOMQNM", value = "URL of this offering's webpage.")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -634,7 +636,7 @@ public class OfferingProperties {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  
+ 
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -669,7 +671,7 @@ public class OfferingProperties {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  
+ 
   @ApiModelProperty(example = "{$ref=../consumers/RIO/V1/examples/Offering.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -696,7 +698,7 @@ public class OfferingProperties {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

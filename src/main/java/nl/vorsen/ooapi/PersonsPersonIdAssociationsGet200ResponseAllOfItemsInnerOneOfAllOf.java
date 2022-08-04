@@ -32,7 +32,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   PersonsPersonIdAssociationsGet200ResponseAllOfItemsInnerOneOfAllOf.JSON_PROPERTY_ACADEMIC_SESSION
 })
 @JsonTypeName("_persons__personId__associations_get_200_response_allOf_items_inner_oneOf_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class PersonsPersonIdAssociationsGet200ResponseAllOfItemsInnerOneOfAllOf {
   public static final String JSON_PROPERTY_OFFERING = "offering";
   private ProgramOffering offering;
@@ -80,7 +80,7 @@ public class PersonsPersonIdAssociationsGet200ResponseAllOfItemsInnerOneOfAllOf 
    * Get academicSession
    * @return academicSession
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

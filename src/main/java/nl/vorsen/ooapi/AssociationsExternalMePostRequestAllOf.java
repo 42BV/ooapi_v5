@@ -29,7 +29,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AssociationsExternalMePostRequestAllOf.JSON_PROPERTY_ISSUER
 })
 @JsonTypeName("_associations_external_me_post_request_allOf")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationsExternalMePostRequestAllOf {
   public static final String JSON_PROPERTY_ISSUER = "issuer";
   private Organization issuer;
@@ -47,7 +47,7 @@ public class AssociationsExternalMePostRequestAllOf {
    * Get issuer
    * @return issuer
   **/
-
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

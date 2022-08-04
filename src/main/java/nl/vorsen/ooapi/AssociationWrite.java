@@ -14,17 +14,15 @@
 package nl.vorsen.ooapi;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
-import org.openapitools.jackson.nullable.JsonNullable;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
@@ -44,10 +42,10 @@ import com.fasterxml.jackson.annotation.JsonValue;
   AssociationWrite.JSON_PROPERTY_EXT,
   AssociationWrite.JSON_PROPERTY_RESULT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationWrite {
   public static final String JSON_PROPERTY_OFFERING = "offering";
-  private JsonNullable<OneOfComponentOfferingCourseOfferingProgramOffering> offering = JsonNullable.<OneOfComponentOfferingCourseOfferingProgramOffering>undefined();
+  private String offering;
 
   public static final String JSON_PROPERTY_ASSOCIATION_ID = "associationId";
   private UUID associationId;
@@ -123,9 +121,9 @@ public class AssociationWrite {
     this.associationType = associationType;
   }
 
-  public AssociationWrite offering(OneOfComponentOfferingCourseOfferingProgramOffering offering) {
-    this.offering = JsonNullable.<OneOfComponentOfferingCourseOfferingProgramOffering>of(offering);
+  public AssociationWrite offering(String offering) {
     
+    this.offering = offering;
     return this;
   }
 
@@ -133,28 +131,20 @@ public class AssociationWrite {
    * The offering this association is for
    * @return offering
   **/
-
+ 
   @ApiModelProperty(value = "The offering this association is for")
-  @JsonIgnore
-
-  public OneOfComponentOfferingCourseOfferingProgramOffering getOffering() {
-        return offering.orElse(null);
-  }
-
   @JsonProperty(JSON_PROPERTY_OFFERING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
 
-  public JsonNullable<OneOfComponentOfferingCourseOfferingProgramOffering> getOffering_JsonNullable() {
+  public String getOffering() {
     return offering;
   }
-  
-  @JsonProperty(JSON_PROPERTY_OFFERING)
-  public void setOffering_JsonNullable(JsonNullable<OneOfComponentOfferingCourseOfferingProgramOffering> offering) {
-    this.offering = offering;
-  }
 
-  public void setOffering(OneOfComponentOfferingCourseOfferingProgramOffering offering) {
-    this.offering = JsonNullable.<OneOfComponentOfferingCourseOfferingProgramOffering>of(offering);
+
+  @JsonProperty(JSON_PROPERTY_OFFERING)
+  @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
+  public void setOffering(String offering) {
+    this.offering = offering;
   }
 
 
@@ -254,7 +244,7 @@ public class AssociationWrite {
    * Get remoteState
    * @return remoteState
   **/
-
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_REMOTE_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -289,7 +279,7 @@ public class AssociationWrite {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-
+ 
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -316,7 +306,7 @@ public class AssociationWrite {
    * Object for additional non-standard attributes
    * @return ext
   **/
-
+ 
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -343,7 +333,7 @@ public class AssociationWrite {
    * Get result
    * @return result
   **/
-
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,7 +359,7 @@ public class AssociationWrite {
       return false;
     }
     AssociationWrite associationWrite = (AssociationWrite) o;
-    return equalsNullable(this.offering, associationWrite.offering) &&
+    return Objects.equals(this.offering, associationWrite.offering) &&
         Objects.equals(this.associationId, associationWrite.associationId) &&
         Objects.equals(this.associationType, associationWrite.associationType) &&
         Objects.equals(this.role, associationWrite.role) &&
@@ -380,20 +370,9 @@ public class AssociationWrite {
         Objects.equals(this.result, associationWrite.result);
   }
 
-  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
-    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && Objects.deepEquals(a.get(), b.get()));
-  }
-
   @Override
   public int hashCode() {
-    return Objects.hash(hashCodeNullable(offering), associationId, associationType, role, state, remoteState, consumers, ext, result);
-  }
-
-  private static <T> int hashCodeNullable(JsonNullable<T> a) {
-    if (a == null) {
-      return 1;
-    }
-    return a.isPresent() ? Arrays.deepHashCode(new Object[]{a.get()}) : 31;
+    return Objects.hash(offering, associationId, associationType, role, state, remoteState, consumers, ext, result);
   }
 
   @Override

@@ -30,7 +30,7 @@ import com.fasterxml.jackson.annotation.JsonTypeName;
   AssociationsAssociationIdGetRequest.JSON_PROPERTY_RESULT
 })
 @JsonTypeName("_associations__associationId__get_request")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T10:55:03.988058+02:00[Europe/Amsterdam]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2022-08-04T11:38:05.422668+02:00[Europe/Amsterdam]")
 public class AssociationsAssociationIdGetRequest {
   public static final String JSON_PROPERTY_REMOTE_STATE = "remoteState";
   private RemoteAssociationState remoteState;
@@ -51,7 +51,7 @@ public class AssociationsAssociationIdGetRequest {
    * Get remoteState
    * @return remoteState
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_REMOTE_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,7 +78,7 @@ public class AssociationsAssociationIdGetRequest {
    * Get result
    * @return result
   **/
-  
+ 
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
