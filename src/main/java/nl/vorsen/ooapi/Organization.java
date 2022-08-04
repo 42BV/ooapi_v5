@@ -249,7 +249,7 @@ public class Organization {
    * Any general description of the organization should clearly mention the type of higher education organization, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).
    * @return description
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{language=nl-NL, value=SURF is een coöperatieve vereniging van Nederlandse onderwijs- en onderzoeksinstellingen waarin de leden hun krachten bundelen. De leden zijn eigenaar van SURF.}]", value = "Any general description of the organization should clearly mention the type of higher education organization, especially in the case of a binary system. In Dutch; universiteit (university) or hogeschool (university of applied sciences).")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -284,7 +284,7 @@ public class Organization {
    * Addresses of this organization
    * @return addresses
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Addresses of this organization")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -311,7 +311,7 @@ public class Organization {
    * URL of the organization&#39;s website
    * @return link
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "https://surf.nl", value = "URL of the organization's website")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -338,7 +338,7 @@ public class Organization {
    * Logo of this organization
    * @return logo
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "https://www.surf.nl/themes/surf/logo.svg", value = "Logo of this organization")
   @JsonProperty(JSON_PROPERTY_LOGO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -373,7 +373,7 @@ public class Organization {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{codeType=brin, code=00AA}, {codeType=kvk, code=12345678}]", value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -400,7 +400,7 @@ public class Organization {
    * Get parent
    * @return parent
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -435,7 +435,7 @@ public class Organization {
    * All the organizational units for which this organization is the parent. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return children
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "All the organizational units for which this organization is the parent. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -470,7 +470,7 @@ public class Organization {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -497,7 +497,7 @@ public class Organization {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

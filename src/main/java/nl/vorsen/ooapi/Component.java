@@ -310,7 +310,7 @@ public class Component {
    * The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie 
    * @return modeOfDelivery
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie ")
   @JsonProperty(JSON_PROPERTY_MODE_OF_DELIVERY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -337,7 +337,7 @@ public class Component {
    * The duration of this component. The duration format is from the ISO 8601 ABNF as given in Appendix A of RFC 3339.
    * @return duration
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "P1DT30H4S", value = "The duration of this component. The duration format is from the ISO 8601 ABNF as given in Appendix A of RFC 3339.")
   @JsonProperty(JSON_PROPERTY_DURATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -372,7 +372,7 @@ public class Component {
    * The description of this component.
    * @return description
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{language=en-GB, value='Prove executable knowledge of research methods, including: Acquire knowledge of HCI research paradigms Able to design suitable research studies (e.g., choose between within and between subject designs) Define/apply/design metrics and scales Define/produce materials (e.g., stimuli and questionnaires) Define protocols for research studies Understands and take in account concepts of reliability and validity Analyze and improve methods and analysis of published scientific articles Able to deliver scientific reports Prove executable knowledge of ­­­statistics, including: Handle hypothesis testing with complex designs (e.g., including , dependent, independent, and co variates) Data preparation (e.g., coding and feature selection) Reason towards adequate techniques to ensure valid outcomes (e.g., be aware of type I, type II errors) Select an appropriate sampling method (e.g., stratified) Perform parametric tests (e.g., repeated measures (M)ANOVA) Perform non-parametric tests (e.g., Chi-square, Mann-Whitney, and Kruskal-Wallis)' }]", value = "The description of this component.")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -434,7 +434,7 @@ public class Component {
    * Statements that describe the knowledge or skills students should acquire by the end of a particular course (ECTS-learningoutcome).
    * @return learningOutcomes
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Statements that describe the knowledge or skills students should acquire by the end of a particular course (ECTS-learningoutcome).")
   @JsonProperty(JSON_PROPERTY_LEARNING_OUTCOMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -469,7 +469,7 @@ public class Component {
    * The extra information that is provided for enrollment
    * @return enrollment
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{language=en-GB, value=enrollment through SIS. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.}]", value = "The extra information that is provided for enrollment")
   @JsonProperty(JSON_PROPERTY_ENROLLMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -504,7 +504,7 @@ public class Component {
    * An overview of the literature and other resources that is used in this course (ECTS-recommended reading and other sources)
    * @return resources
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[book to be announced, on-line resource x]", value = "An overview of the literature and other resources that is used in this course (ECTS-recommended reading and other sources)")
   @JsonProperty(JSON_PROPERTY_RESOURCES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -539,7 +539,7 @@ public class Component {
    * A description of the way exams for this course are taken (ECTS-assessment method and criteria).
    * @return assessment
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{language=en-GB, value=Exam on campus}]", value = "A description of the way exams for this course are taken (ECTS-assessment method and criteria).")
   @JsonProperty(JSON_PROPERTY_ASSESSMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -574,7 +574,7 @@ public class Component {
    * Addresses for this component
    * @return addresses
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Addresses for this component")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -609,7 +609,7 @@ public class Component {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -636,7 +636,7 @@ public class Component {
    * Get course
    * @return course
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_COURSE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -663,7 +663,7 @@ public class Component {
    * Get organization
    * @return organization
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -698,7 +698,7 @@ public class Component {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -725,7 +725,7 @@ public class Component {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

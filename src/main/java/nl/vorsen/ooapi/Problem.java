@@ -109,7 +109,7 @@ public class Problem {
    * A human-readable explanation specific to this occurrence of the problem
    * @return detail
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "A human-readable explanation specific to this occurrence of the problem")
   @JsonProperty(JSON_PROPERTY_DETAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

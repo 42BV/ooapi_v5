@@ -51,7 +51,7 @@ public class LanguageTypedString {
    * The language used in the described entity. A string formatted according to RFC3066.
    * @return language
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The language used in the described entity. A string formatted according to RFC3066.")
   @JsonProperty(JSON_PROPERTY_LANGUAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,7 +78,7 @@ public class LanguageTypedString {
    * String to describe the entity.
    * @return value
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "String to describe the entity.")
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

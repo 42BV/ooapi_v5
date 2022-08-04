@@ -122,7 +122,7 @@ public class AcademicSessionParent {
    * The type of this Academic Session This is an *extensible enumeration*. - academic year: academic year - semester: semester, typically there are two semesters per academic year - trimester: trimester, typically there are three semesters per academic year - quarter: quarter, typically there are four quarters per academic year - testing period: a period in which tests take place - period: any other period in an academic year  Implementations are allowed to add additional values to those above, as long as they do not overlap in definition to existing values. 
    * @return academicSessionType
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "semester", value = "The type of this Academic Session This is an *extensible enumeration*. - academic year: academic year - semester: semester, typically there are two semesters per academic year - trimester: trimester, typically there are three semesters per academic year - quarter: quarter, typically there are four quarters per academic year - testing period: a period in which tests take place - period: any other period in an academic year  Implementations are allowed to add additional values to those above, as long as they do not overlap in definition to existing values. ")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,7 +149,7 @@ public class AcademicSessionParent {
    * Get primaryCode
    * @return primaryCode
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PRIMARY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -262,7 +262,7 @@ public class AcademicSessionParent {
    * Get parent
    * @return parent
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -297,7 +297,7 @@ public class AcademicSessionParent {
    * The list of Academicsession children of this Session (e.g. all academic sessions in fall semester 20xx). This object is [&#x60;expandable&#x60;](#tag/academic_sessions_model)
    * @return children
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The list of Academicsession children of this Session (e.g. all academic sessions in fall semester 20xx). This object is [`expandable`](#tag/academic_sessions_model)")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -324,7 +324,7 @@ public class AcademicSessionParent {
    * Get year
    * @return year
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_YEAR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -359,7 +359,7 @@ public class AcademicSessionParent {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -394,7 +394,7 @@ public class AcademicSessionParent {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -421,7 +421,7 @@ public class AcademicSessionParent {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

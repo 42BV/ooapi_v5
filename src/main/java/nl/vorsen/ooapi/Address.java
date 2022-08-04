@@ -108,7 +108,7 @@ public class Address {
    * The street name
    * @return street
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Moreelsepark", value = "The street name")
   @JsonProperty(JSON_PROPERTY_STREET)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -135,7 +135,7 @@ public class Address {
    * The street number
    * @return streetNumber
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "48", value = "The street number")
   @JsonProperty(JSON_PROPERTY_STREET_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -170,7 +170,7 @@ public class Address {
    * Further details like building name, suite, apartment number, etc.
    * @return additional
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{language=en-GB, value=On the other side of the road}]", value = "Further details like building name, suite, apartment number, etc.")
   @JsonProperty(JSON_PROPERTY_ADDITIONAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -197,7 +197,7 @@ public class Address {
    * Postal code
    * @return postalCode
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "3511 EP", value = "Postal code")
   @JsonProperty(JSON_PROPERTY_POSTAL_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -224,7 +224,7 @@ public class Address {
    * name of the city / locality
    * @return city
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Utrecht", value = "name of the city / locality")
   @JsonProperty(JSON_PROPERTY_CITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -251,7 +251,7 @@ public class Address {
    * the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
    * @return countryCode
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "NL", value = "the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)")
   @JsonProperty(JSON_PROPERTY_COUNTRY_CODE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -278,7 +278,7 @@ public class Address {
    * Get geolocation
    * @return geolocation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_GEOLOCATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -305,7 +305,7 @@ public class Address {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

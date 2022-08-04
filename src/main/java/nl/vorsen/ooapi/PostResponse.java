@@ -86,7 +86,7 @@ public class PostResponse {
    * URL where additional information can be found e.g. by use of deeplink
    * @return redirect
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "URL where additional information can be found e.g. by use of deeplink")
   @JsonProperty(JSON_PROPERTY_REDIRECT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -211,7 +211,7 @@ public class ProgramOfferingAssociation {
    * Get remoteState
    * @return remoteState
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_REMOTE_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -246,7 +246,7 @@ public class ProgramOfferingAssociation {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -273,7 +273,7 @@ public class ProgramOfferingAssociation {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -300,7 +300,7 @@ public class ProgramOfferingAssociation {
    * Get result
    * @return result
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -217,7 +217,7 @@ public class Group {
    * The description of this group
    * @return description
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{language=en-GB, value=The group of students that follow statistics classes}]", value = "The description of this group")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,7 +244,7 @@ public class Group {
    * The day on which this group starts being active, RFC3339 (full-date)
    * @return startDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Mon Aug 17 02:00:00 CEST 2020", value = "The day on which this group starts being active, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -271,7 +271,7 @@ public class Group {
    * The day on which this group ends being active, RFC3339 (full-date)
    * @return endDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Fri Dec 18 01:00:00 CET 2020", value = "The day on which this group ends being active, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -299,7 +299,7 @@ public class Group {
    * minimum: 0
    * @return personCount
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "183", value = "The number of persons that are member of this group")
   @JsonProperty(JSON_PROPERTY_PERSON_COUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -334,7 +334,7 @@ public class Group {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -369,7 +369,7 @@ public class Group {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -396,7 +396,7 @@ public class Group {
    * Get organization
    * @return organization
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -423,7 +423,7 @@ public class Group {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

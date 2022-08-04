@@ -98,7 +98,7 @@ public class Cost {
    * The total amount of the cost as a string. Use a &#39;.&#39; (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.
    * @return amount
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "340.84", value = "The total amount of the cost as a string. Use a '.' (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.")
   @JsonProperty(JSON_PROPERTY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -125,7 +125,7 @@ public class Cost {
    * The part of the cost that is VAT, as a string. Use a &#39;.&#39; (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.
    * @return vatAmount
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "40", value = "The part of the cost that is VAT, as a string. Use a '.' (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.")
   @JsonProperty(JSON_PROPERTY_VAT_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -152,7 +152,7 @@ public class Cost {
    * The part of the cost that is non-VAT. as a string. Use a &#39;.&#39; (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.
    * @return amountWithoutVat
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "300.84", value = "The part of the cost that is non-VAT. as a string. Use a '.' (dot) as an optional separator. The numbers before the separator signify the major units of the currency, after the dot the minor units. Only a single separator is allowed. Do not use a comma.")
   @JsonProperty(JSON_PROPERTY_AMOUNT_WITHOUT_VAT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -179,7 +179,7 @@ public class Cost {
    * The currency this cost is in. Should correspond to one of the currency codes from ISO 4217.
    * @return currency
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "EUR", value = "The currency this cost is in. Should correspond to one of the currency codes from ISO 4217.")
   @JsonProperty(JSON_PROPERTY_CURRENCY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -214,7 +214,7 @@ public class Cost {
    * An array of optional pre-formatted strings in different locales. Clients can choose to use this string instead of rendering their own based on the current locale of the user.
    * @return displayAmount
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{language=nl-NL, value=€380,84}, {language=en-US, value=$401.17}]", value = "An array of optional pre-formatted strings in different locales. Clients can choose to use this string instead of rendering their own based on the current locale of the user.")
   @JsonProperty(JSON_PROPERTY_DISPLAY_AMOUNT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -241,7 +241,7 @@ public class Cost {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

@@ -329,7 +329,7 @@ public class CourseOffering {
    * The academicsession during which this courseoffering takes place. [&#x60;expandable&#x60;](#tag/academic_session_model) By default only the &#x60;academicSessionId&#x60; (a string) is returned. If the client requested an expansion of &#x60;academicSession&#x60; the full academicsession object should be returned. 
    * @return academicSession
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The academicsession during which this courseoffering takes place. [`expandable`](#tag/academic_session_model) By default only the `academicSessionId` (a string) is returned. If the client requested an expansion of `academicSession` the full academicsession object should be returned. ")
   @JsonIgnore
 
@@ -396,7 +396,7 @@ public class CourseOffering {
    * The abbreviation or internal code used to identify this offering
    * @return abbreviation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Test-INFOMQNM-20FS", value = "The abbreviation or internal code used to identify this offering")
   @JsonProperty(JSON_PROPERTY_ABBREVIATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -490,7 +490,7 @@ public class CourseOffering {
    * The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie 
    * @return modeOfDelivery
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The mode of delivery of the component (ECTS-mode of delivery) - distance-learning: afstandsleren - on campus: op de campus - online: online - hybrid: hybride - situated: op locatie ")
   @JsonProperty(JSON_PROPERTY_MODE_OF_DELIVERY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -518,7 +518,7 @@ public class CourseOffering {
    * minimum: 0
    * @return maxNumberStudents
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "200", value = "The maximum number of students allowed to enroll for this offering")
   @JsonProperty(JSON_PROPERTY_MAX_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -546,7 +546,7 @@ public class CourseOffering {
    * minimum: 0
    * @return enrolledNumberStudents
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "150", value = "The number of students that have already enrolled for this offering")
   @JsonProperty(JSON_PROPERTY_ENROLLED_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -574,7 +574,7 @@ public class CourseOffering {
    * minimum: 0
    * @return pendingNumberStudents
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "50", value = "The number of students that have a pending enrollment request for this offering")
   @JsonProperty(JSON_PROPERTY_PENDING_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -602,7 +602,7 @@ public class CourseOffering {
    * minimum: 0
    * @return minNumberStudents
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "15", value = "The minimum number of students needed for this offering to proceed")
   @JsonProperty(JSON_PROPERTY_MIN_NUMBER_STUDENTS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -656,7 +656,7 @@ public class CourseOffering {
    * Get resultValueType
    * @return resultValueType
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT_VALUE_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -683,7 +683,7 @@ public class CourseOffering {
    * URL of this offering&#39;s webpage.
    * @return link
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "https://osiris.uu.nl/osiris_student_uuprd/OnderwijsCatalogusZoekCursus.do#submitForm?cursuscode=INFOMQNM", value = "URL of this offering's webpage.")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -718,7 +718,7 @@ public class CourseOffering {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -753,7 +753,7 @@ public class CourseOffering {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/RIO/V1/examples/Offering.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -780,7 +780,7 @@ public class CourseOffering {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -861,7 +861,7 @@ public class CourseOffering {
    * The first day on which a student can enroll for this course.
    * @return enrollStartDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Wed May 01 02:00:00 CEST 2019", value = "The first day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -888,7 +888,7 @@ public class CourseOffering {
    * The last day on which a student can enroll for this course.
    * @return enrollEndDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Thu Aug 01 02:00:00 CEST 2019", value = "The last day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -915,7 +915,7 @@ public class CourseOffering {
    * If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodEnd&#x60;.
    * @return flexibleEntryPeriodStart
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodEnd`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_START)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -942,7 +942,7 @@ public class CourseOffering {
    * If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodStart&#x60;.
    * @return flexibleEntryPeriodEnd
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "If this is a course wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodStart`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_END)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -977,7 +977,7 @@ public class CourseOffering {
    * Addresses for this offering
    * @return addresses
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Addresses for this offering")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1012,7 +1012,7 @@ public class CourseOffering {
    * Price information for this offering.
    * @return priceInformation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Price information for this offering.")
   @JsonProperty(JSON_PROPERTY_PRICE_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1039,7 +1039,7 @@ public class CourseOffering {
    * The course that is offered in this courseoffering. [&#x60;expandable&#x60;](#tag/course_model) By default only the &#x60;courseId&#x60; (a string) is returned. If the client requested an expansion of &#x60;course&#x60; the full course object should be returned. 
    * @return course
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The course that is offered in this courseoffering. [`expandable`](#tag/course_model) By default only the `courseId` (a string) is returned. If the client requested an expansion of `course` the full course object should be returned. ")
   @JsonIgnore
 
@@ -1074,7 +1074,7 @@ public class CourseOffering {
    * The programoffering where this courseoffering is related to. [&#x60;expandable&#x60;](#tag/program_offering_model) By default only the &#x60;programOfferingId&#x60; (a string) is returned. If the client requested an expansion of &#x60;programOffering&#x60; the full programOffering object should be returned. 
    * @return programOffering
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The programoffering where this courseoffering is related to. [`expandable`](#tag/program_offering_model) By default only the `programOfferingId` (a string) is returned. If the client requested an expansion of `programOffering` the full programOffering object should be returned. ")
   @JsonIgnore
 
@@ -1109,7 +1109,7 @@ public class CourseOffering {
    * The organization that manages this courseoffering. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return organization
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The organization that manages this courseoffering. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
   @JsonIgnore
 

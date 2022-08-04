@@ -47,7 +47,7 @@ public class AssociationsExternalMePostRequestAllOf {
    * Get issuer
    * @return issuer
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ISSUER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

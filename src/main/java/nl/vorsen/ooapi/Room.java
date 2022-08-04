@@ -187,7 +187,7 @@ public class Room {
    * The abbreviation of the name of this room
    * @return abbreviation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Bb4.54", value = "The abbreviation of the name of this room")
   @JsonProperty(JSON_PROPERTY_ABBREVIATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -254,7 +254,7 @@ public class Room {
    * The description of this room. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.
    * @return description
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{language=en-GB, value=External education and exam room 4.54}]", value = "The description of this room. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -281,7 +281,7 @@ public class Room {
    * The total number of seats located in the room
    * @return totalSeats
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "300", value = "The total number of seats located in the room")
   @JsonProperty(JSON_PROPERTY_TOTAL_SEATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -308,7 +308,7 @@ public class Room {
    * The total number of available (&#x3D;non-reserved) seats in the room
    * @return availableSeats
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "200", value = "The total number of available (=non-reserved) seats in the room")
   @JsonProperty(JSON_PROPERTY_AVAILABLE_SEATS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -335,7 +335,7 @@ public class Room {
    * The floor on which this room is located
    * @return floor
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "4", value = "The floor on which this room is located")
   @JsonProperty(JSON_PROPERTY_FLOOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -362,7 +362,7 @@ public class Room {
    * The wing in which this room is located
    * @return wing
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "None", value = "The wing in which this room is located")
   @JsonProperty(JSON_PROPERTY_WING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -389,7 +389,7 @@ public class Room {
    * Get geolocation
    * @return geolocation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_GEOLOCATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -424,7 +424,7 @@ public class Room {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -451,7 +451,7 @@ public class Room {
    * Get building
    * @return building
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_BUILDING)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -486,7 +486,7 @@ public class Room {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -513,7 +513,7 @@ public class Room {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

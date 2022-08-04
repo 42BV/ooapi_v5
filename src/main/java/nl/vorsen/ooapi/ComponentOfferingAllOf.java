@@ -153,7 +153,7 @@ public class ComponentOfferingAllOf {
    * The first day on which a student can enroll for this course.
    * @return enrollStartDate
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The first day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -180,7 +180,7 @@ public class ComponentOfferingAllOf {
    * The last day on which a student can enroll for this course.
    * @return enrollEndDate
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The last day on which a student can enroll for this course.")
   @JsonProperty(JSON_PROPERTY_ENROLL_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -209,7 +209,7 @@ public class ComponentOfferingAllOf {
    * maximum: 100
    * @return resultWeight
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "100", value = "The result weight of this offering")
   @JsonProperty(JSON_PROPERTY_RESULT_WEIGHT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -244,7 +244,7 @@ public class ComponentOfferingAllOf {
    * Addresses for this offering
    * @return addresses
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Addresses for this offering")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -279,7 +279,7 @@ public class ComponentOfferingAllOf {
    * Price information for this offering.
    * @return priceInformation
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Price information for this offering.")
   @JsonProperty(JSON_PROPERTY_PRICE_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -306,7 +306,7 @@ public class ComponentOfferingAllOf {
    * Get room
    * @return room
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ROOM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -333,7 +333,7 @@ public class ComponentOfferingAllOf {
    * The component that is offered in this componentoffering. [&#x60;expandable&#x60;](#tag/component_model) By default only the &#x60;componentId&#x60; (a string) is returned. If the client requested an expansion of &#x60;component&#x60; the full component object should be returned. 
    * @return component
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The component that is offered in this componentoffering. [`expandable`](#tag/component_model) By default only the `componentId` (a string) is returned. If the client requested an expansion of `component` the full component object should be returned. ")
   @JsonIgnore
 
@@ -368,7 +368,7 @@ public class ComponentOfferingAllOf {
    * The courseoffering where this componentoffering is related to. [&#x60;expandable&#x60;](#tag/course_offering_model) By default only the &#x60;courseOfferingId&#x60; (a string) is returned. If the client requested an expansion of &#x60;courseOffering&#x60; the full courseOffering object should be returned. 
    * @return courseOffering
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The courseoffering where this componentoffering is related to. [`expandable`](#tag/course_offering_model) By default only the `courseOfferingId` (a string) is returned. If the client requested an expansion of `courseOffering` the full courseOffering object should be returned. ")
   @JsonIgnore
 
@@ -403,7 +403,7 @@ public class ComponentOfferingAllOf {
    * The organization that manages this componentoffering. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return organization
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The organization that manages this componentoffering. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
   @JsonIgnore
 
@@ -438,7 +438,7 @@ public class ComponentOfferingAllOf {
    * The academicsession during which this componentoffering takes place. [&#x60;expandable&#x60;](#tag/academic_session_model) By default only the &#x60;academicSessionId&#x60; (a string) is returned. If the client requested an expansion of &#x60;academicSession&#x60; the full academicsession object should be returned. 
    * @return academicSession
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The academicsession during which this componentoffering takes place. [`expandable`](#tag/academic_session_model) By default only the `academicSessionId` (a string) is returned. If the client requested an expansion of `academicSession` the full academicsession object should be returned. ")
   @JsonIgnore
 

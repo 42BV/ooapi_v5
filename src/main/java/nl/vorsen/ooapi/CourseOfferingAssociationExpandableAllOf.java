@@ -51,7 +51,7 @@ public class CourseOfferingAssociationExpandableAllOf {
    * Get result
    * @return result
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_RESULT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -78,7 +78,7 @@ public class CourseOfferingAssociationExpandableAllOf {
    * Get person
    * @return person
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PERSON)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

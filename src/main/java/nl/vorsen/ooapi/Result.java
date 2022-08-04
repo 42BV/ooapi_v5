@@ -95,7 +95,7 @@ public class Result {
    * Get pass
    * @return pass
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PASS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +122,7 @@ public class Result {
    * The comment on this result
    * @return comment
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The comment on this result")
   @JsonProperty(JSON_PROPERTY_COMMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -149,7 +149,7 @@ public class Result {
    * The score of this program/course/component association (based on resultValueType in offering)
    * @return score
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "9", value = "The score of this program/course/component association (based on resultValueType in offering)")
   @JsonProperty(JSON_PROPERTY_SCORE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -203,7 +203,7 @@ public class Result {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

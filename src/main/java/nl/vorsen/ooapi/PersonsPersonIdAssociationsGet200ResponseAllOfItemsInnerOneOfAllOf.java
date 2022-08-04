@@ -80,7 +80,7 @@ public class PersonsPersonIdAssociationsGet200ResponseAllOfItemsInnerOneOfAllOf 
    * Get academicSession
    * @return academicSession
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

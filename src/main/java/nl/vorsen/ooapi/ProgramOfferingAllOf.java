@@ -148,7 +148,7 @@ public class ProgramOfferingAllOf {
    * The first day on which a student can enroll for this program.
    * @return enrollStartDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Wed May 01 02:00:00 CEST 2019", value = "The first day on which a student can enroll for this program.")
   @JsonProperty(JSON_PROPERTY_ENROLL_START_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -175,7 +175,7 @@ public class ProgramOfferingAllOf {
    * The last day on which a student can enroll for this program.
    * @return enrollEndDate
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Thu Aug 01 02:00:00 CEST 2019", value = "The last day on which a student can enroll for this program.")
   @JsonProperty(JSON_PROPERTY_ENROLL_END_DATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -202,7 +202,7 @@ public class ProgramOfferingAllOf {
    * If this is a program wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodEnd&#x60;.
    * @return flexibleEntryPeriodStart
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "If this is a program wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodEnd`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_START)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -229,7 +229,7 @@ public class ProgramOfferingAllOf {
    * If this is a program wherein participants can start at various moments, without missing anything, use this attribute in combination with &#x60;flexibleEntryPeriodStart&#x60;.
    * @return flexibleEntryPeriodEnd
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "If this is a program wherein participants can start at various moments, without missing anything, use this attribute in combination with `flexibleEntryPeriodStart`.")
   @JsonProperty(JSON_PROPERTY_FLEXIBLE_ENTRY_PERIOD_END)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -264,7 +264,7 @@ public class ProgramOfferingAllOf {
    * Addresses for this offering
    * @return addresses
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Addresses for this offering")
   @JsonProperty(JSON_PROPERTY_ADDRESSES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -299,7 +299,7 @@ public class ProgramOfferingAllOf {
    * Price information for this offering.
    * @return priceInformation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Price information for this offering.")
   @JsonProperty(JSON_PROPERTY_PRICE_INFORMATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -326,7 +326,7 @@ public class ProgramOfferingAllOf {
    * The Program that is offered in this programoffering. [&#x60;expandable&#x60;](#tag/program_model) By default only the &#x60;programId&#x60; (a string) is returned. If the client requested an expansion of &#x60;program&#x60; the full program object should be returned. 
    * @return program
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The Program that is offered in this programoffering. [`expandable`](#tag/program_model) By default only the `programId` (a string) is returned. If the client requested an expansion of `program` the full program object should be returned. ")
   @JsonIgnore
 
@@ -361,7 +361,7 @@ public class ProgramOfferingAllOf {
    * The organization that manages this programeoffering. [&#x60;expandable&#x60;](#tag/organization_model) By default only the &#x60;organizationId&#x60; (a string) is returned. If the client requested an expansion of &#x60;organization&#x60; the full organization object should be returned. 
    * @return organization
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The organization that manages this programeoffering. [`expandable`](#tag/organization_model) By default only the `organizationId` (a string) is returned. If the client requested an expansion of `organization` the full organization object should be returned. ")
   @JsonIgnore
 
@@ -396,7 +396,7 @@ public class ProgramOfferingAllOf {
    * The academicsession during which this programoffering takes place. [&#x60;expandable&#x60;](#tag/academic_session_model) By default only the &#x60;academicSessionId&#x60; (a string) is returned. If the client requested an expansion of &#x60;academicSession&#x60; the full academicsession object should be returned. 
    * @return academicSession
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The academicsession during which this programoffering takes place. [`expandable`](#tag/academic_session_model) By default only the `academicSessionId` (a string) is returned. If the client requested an expansion of `academicSession` the full academicsession object should be returned. ")
   @JsonIgnore
 

@@ -52,7 +52,7 @@ public class CourseAllOf {
    * The first day this course is valid (inclusive).
    * @return validFrom
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The first day this course is valid (inclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -79,7 +79,7 @@ public class CourseAllOf {
    * The day this course ceases to be valid (e.g. exclusive).
    * @return validTo
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The day this course ceases to be valid (e.g. exclusive).")
   @JsonProperty(JSON_PROPERTY_VALID_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

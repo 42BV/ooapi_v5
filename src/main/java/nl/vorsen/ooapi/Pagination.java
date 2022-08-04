@@ -170,7 +170,7 @@ public class Pagination {
    * Total number of pages
    * @return totalPages
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "8", value = "Total number of pages")
   @JsonProperty(JSON_PROPERTY_TOTAL_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

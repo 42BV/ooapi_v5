@@ -264,7 +264,7 @@ public class PersonsGetRequest {
    * The prefix of the family name of this person
    * @return surnamePrefix
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "van", value = "The prefix of the family name of this person")
   @JsonProperty(JSON_PROPERTY_SURNAME_PREFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,7 +345,7 @@ public class PersonsGetRequest {
    * The initials of this person
    * @return initials
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "MCW", value = "The initials of this person")
   @JsonProperty(JSON_PROPERTY_INITIALS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -399,7 +399,7 @@ public class PersonsGetRequest {
    * The date of birth of this person, RFC3339 (full-date)
    * @return dateOfBirth
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Tue Sep 30 02:00:00 CEST 2003", value = "The date of birth of this person, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_DATE_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -426,7 +426,7 @@ public class PersonsGetRequest {
    * The city of birth of this person
    * @return cityOfBirth
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Utrecht", value = "The city of birth of this person")
   @JsonProperty(JSON_PROPERTY_CITY_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -453,7 +453,7 @@ public class PersonsGetRequest {
    * The country of birth of this person the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
    * @return countryOfBirth
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "NL", value = "The country of birth of this person the country code according to [iso-3166-1-alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)")
   @JsonProperty(JSON_PROPERTY_COUNTRY_OF_BIRTH)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -480,7 +480,7 @@ public class PersonsGetRequest {
    * The nationality of this person the nationality according to https://gist.github.com/zspine/2365808
    * @return nationality
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Dutch", value = "The nationality of this person the nationality according to https://gist.github.com/zspine/2365808")
   @JsonProperty(JSON_PROPERTY_NATIONALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -507,7 +507,7 @@ public class PersonsGetRequest {
    * The date of nationality of this person, RFC3339 (full-date)
    * @return dateOfNationality
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Tue Sep 30 02:00:00 CEST 2003", value = "The date of nationality of this person, RFC3339 (full-date)")
   @JsonProperty(JSON_PROPERTY_DATE_OF_NATIONALITY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -593,7 +593,7 @@ public class PersonsGetRequest {
    * The secondary e-mailaddress of this person
    * @return secondaryMail
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "poekie@xyz.nl", value = "The secondary e-mailaddress of this person")
   @JsonProperty(JSON_PROPERTY_SECONDARY_MAIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -620,7 +620,7 @@ public class PersonsGetRequest {
    * The telephone number of this person
    * @return telephoneNumber
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "+31 123 456 789", value = "The telephone number of this person")
   @JsonProperty(JSON_PROPERTY_TELEPHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -647,7 +647,7 @@ public class PersonsGetRequest {
    * The mobile number of this person
    * @return mobileNumber
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "+31 612 345 678", value = "The mobile number of this person")
   @JsonProperty(JSON_PROPERTY_MOBILE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -674,7 +674,7 @@ public class PersonsGetRequest {
    * The url of the informal picture of this person
    * @return photoSocial
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Placeholder_female_superhero_c.png/203px-Placeholder_female_superhero_c.png", value = "The url of the informal picture of this person")
   @JsonProperty(JSON_PROPERTY_PHOTO_SOCIAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -701,7 +701,7 @@ public class PersonsGetRequest {
    * The url of the official picture of this person
    * @return photoOfficial
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "https://upload.wikimedia.org/wikipedia/commons/6/66/Johannes_Vermeer_%281632-1675%29_-_The_Girl_With_The_Pearl_Earring_%281665%29.jpg", value = "The url of the official picture of this person")
   @JsonProperty(JSON_PROPERTY_PHOTO_OFFICIAL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -728,7 +728,7 @@ public class PersonsGetRequest {
    * Get gender
    * @return gender
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_GENDER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -755,7 +755,7 @@ public class PersonsGetRequest {
    * A title prefix to be used for this person
    * @return titlePrefix
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "drs", value = "A title prefix to be used for this person")
   @JsonProperty(JSON_PROPERTY_TITLE_PREFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -782,7 +782,7 @@ public class PersonsGetRequest {
    * A title suffix to be used for this person
    * @return titleSuffix
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "BSc", value = "A title suffix to be used for this person")
   @JsonProperty(JSON_PROPERTY_TITLE_SUFFIX)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -809,7 +809,7 @@ public class PersonsGetRequest {
    * The name of the office where this person is located
    * @return office
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The name of the office where this person is located")
   @JsonProperty(JSON_PROPERTY_OFFICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -836,7 +836,7 @@ public class PersonsGetRequest {
    * Get address
    * @return address
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ADDRESS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -863,7 +863,7 @@ public class PersonsGetRequest {
    * Full name of In Case of Emergency contact
    * @return icEName
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "Janne", value = "Full name of In Case of Emergency contact")
   @JsonProperty(JSON_PROPERTY_IC_E_NAME)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -890,7 +890,7 @@ public class PersonsGetRequest {
    * Phone number of In Case of Emergency contact
    * @return icEPhoneNumber
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "+31 623 456 789", value = "Phone number of In Case of Emergency contact")
   @JsonProperty(JSON_PROPERTY_IC_E_PHONE_NUMBER)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -917,7 +917,7 @@ public class PersonsGetRequest {
    * Get icERelation
    * @return icERelation
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_IC_E_RELATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -952,7 +952,7 @@ public class PersonsGetRequest {
    * The language(s) of choice for this person, RFC3066
    * @return languageOfChoice
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "The language(s) of choice for this person, RFC3066")
   @JsonProperty(JSON_PROPERTY_LANGUAGE_OF_CHOICE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -987,7 +987,7 @@ public class PersonsGetRequest {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "[{codeType=nationalIdentityNumber, code=00000}]", value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1022,7 +1022,7 @@ public class PersonsGetRequest {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -1049,7 +1049,7 @@ public class PersonsGetRequest {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

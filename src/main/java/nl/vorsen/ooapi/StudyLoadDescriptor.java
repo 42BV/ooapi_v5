@@ -95,7 +95,7 @@ public class StudyLoadDescriptor {
    * The unit in which the studyload is specfied - contacttime: CONTACTUUR amount of time spent in classes - ects: ECTS_PUNT European Credit Transfer System - sbu: SBU studentloadhours - sp: STUDIEPUNT studentpoints - hour: UUR hours 
    * @return studyLoadUnit
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "ects", value = "The unit in which the studyload is specfied - contacttime: CONTACTUUR amount of time spent in classes - ects: ECTS_PUNT European Credit Transfer System - sbu: SBU studentloadhours - sp: STUDIEPUNT studentpoints - hour: UUR hours ")
   @JsonProperty(JSON_PROPERTY_STUDY_LOAD_UNIT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -122,7 +122,7 @@ public class StudyLoadDescriptor {
    * The amount of load depicted in numbers
    * @return value
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(example = "3", value = "The amount of load depicted in numbers")
   @JsonProperty(JSON_PROPERTY_VALUE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

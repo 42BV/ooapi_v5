@@ -181,7 +181,7 @@ public class PersonsPersonIdGroupsGet200Response {
    * Total number of pages
    * @return totalPages
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Total number of pages")
   @JsonProperty(JSON_PROPERTY_TOTAL_PAGES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -240,7 +240,7 @@ public class PersonsPersonIdGroupsGet200Response {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

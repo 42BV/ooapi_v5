@@ -127,7 +127,7 @@ public class NewsItem {
    * Get newsItemType
    * @return newsItemType
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_NEWS_ITEM_TYPE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -194,7 +194,7 @@ public class NewsItem {
    * The authors of the article with this news item
    * @return authors
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[admin@universiteitvanharderwijk.nl]", value = "The authors of the article with this news item")
   @JsonProperty(JSON_PROPERTY_AUTHORS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -221,7 +221,7 @@ public class NewsItem {
    * The url containing the address of the image belonging to this news item
    * @return image
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "https://upload.wikimedia.org/wikipedia/commons/4/44/Antu_emblem-unavailable.svg", value = "The url containing the address of the image belonging to this news item")
   @JsonProperty(JSON_PROPERTY_IMAGE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -248,7 +248,7 @@ public class NewsItem {
    * The url containing the address of the article belonging to this news item
    * @return link
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "https://www.universiteitvanharderwijk.nl/cms/ruimtegebrek", value = "The url containing the address of the article belonging to this news item")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -283,7 +283,7 @@ public class NewsItem {
    * The content of this news item.
    * @return content
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{language=en-GB, value=The room Bb 4.35 will be under maintenance}]", value = "The content of this news item.")
   @JsonProperty(JSON_PROPERTY_CONTENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -318,7 +318,7 @@ public class NewsItem {
    * The newsFeeds where this item can be found. [&#x60;expandable&#x60;](#tag/news_feed_model)
    * @return newsFeeds
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The newsFeeds where this item can be found. [`expandable`](#tag/news_feed_model)")
   @JsonProperty(JSON_PROPERTY_NEWS_FEEDS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -345,7 +345,7 @@ public class NewsItem {
    * The moment from which this news item is valid, RFC3339 (date-time)
    * @return validFrom
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "2020-09-28T08:30Z", value = "The moment from which this news item is valid, RFC3339 (date-time)")
   @JsonProperty(JSON_PROPERTY_VALID_FROM)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -372,7 +372,7 @@ public class NewsItem {
    * The moment until which this news item is valid, RFC3339 (date-time)
    * @return validUntil
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "2020-09-30T20:00Z", value = "The moment until which this news item is valid, RFC3339 (date-time)")
   @JsonProperty(JSON_PROPERTY_VALID_UNTIL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -399,7 +399,7 @@ public class NewsItem {
    * The moment on which this news item was updated, RFC3339 (date-time)
    * @return lastModified
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "2020-09-28T00:00Z", value = "The moment on which this news item was updated, RFC3339 (date-time)")
   @JsonProperty(JSON_PROPERTY_LAST_MODIFIED)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -434,7 +434,7 @@ public class NewsItem {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "{$ref=../consumers/TEST/V1/examples/TestConsumer.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -461,7 +461,7 @@ public class NewsItem {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

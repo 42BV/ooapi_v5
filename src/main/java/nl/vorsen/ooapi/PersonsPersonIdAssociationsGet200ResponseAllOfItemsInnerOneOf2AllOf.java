@@ -15,6 +15,8 @@ package nl.vorsen.ooapi;
 
 import java.util.Objects;
 
+import javax.validation.constraints.NotNull;
+
 import io.swagger.annotations.ApiModelProperty;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -78,7 +80,7 @@ public class PersonsPersonIdAssociationsGet200ResponseAllOfItemsInnerOneOf2AllOf
    * Get academicSession
    * @return academicSession
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ACADEMIC_SESSION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

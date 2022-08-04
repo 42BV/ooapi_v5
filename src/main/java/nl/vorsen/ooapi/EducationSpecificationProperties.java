@@ -159,7 +159,7 @@ public class EducationSpecificationProperties {
    * An array of additional human readable codes/identifiers for the entity being described.
    * @return otherCodes
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{codeType=crohoCreboCode, code=1234123}]", value = "An array of additional human readable codes/identifiers for the entity being described.")
   @JsonProperty(JSON_PROPERTY_OTHER_CODES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -245,7 +245,7 @@ public class EducationSpecificationProperties {
    * The abbreviation of this program
    * @return abbreviation
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "B Scheikundige Technologie", value = "The abbreviation of this program")
   @JsonProperty(JSON_PROPERTY_ABBREVIATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -280,7 +280,7 @@ public class EducationSpecificationProperties {
    * The description of this program. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.
    * @return description
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "[{language=en-GB, value=program that is a place holder for all courses that are made available for student mobility}]", value = "The description of this program. [The limited implementation of Git Hub Markdown syntax](#tag/formatting-and-displaying-results-from-API) MAY be used for rich text representation.")
   @JsonProperty(JSON_PROPERTY_DESCRIPTION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -307,7 +307,7 @@ public class EducationSpecificationProperties {
    * Get formalDocument
    * @return formalDocument
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_FORMAL_DOCUMENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -334,7 +334,7 @@ public class EducationSpecificationProperties {
    * Get level
    * @return level
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_LEVEL)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -361,7 +361,7 @@ public class EducationSpecificationProperties {
    * Get sector
    * @return sector
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_SECTOR)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -388,7 +388,7 @@ public class EducationSpecificationProperties {
    * Get levelOfQualification
    * @return levelOfQualification
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_LEVEL_OF_QUALIFICATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -415,7 +415,7 @@ public class EducationSpecificationProperties {
    * Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.
    * @return fieldsOfStudy
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "0732", value = "Field(s) of study (e.g. ISCED-F) (http://uis.unesco.org/sites/default/files/documents/isced-fields-of-education-and-training-2013-en.pdf.")
   @JsonProperty(JSON_PROPERTY_FIELDS_OF_STUDY)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -442,7 +442,7 @@ public class EducationSpecificationProperties {
    * Get studyLoad
    * @return studyLoad
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_STUDY_LOAD)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -477,7 +477,7 @@ public class EducationSpecificationProperties {
    * Statements that describe the knowledge or skills students should acquire by the end of a particular course or program (ECTS-learningoutcome).
    * @return learningOutcomes
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Statements that describe the knowledge or skills students should acquire by the end of a particular course or program (ECTS-learningoutcome).")
   @JsonProperty(JSON_PROPERTY_LEARNING_OUTCOMES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -504,7 +504,7 @@ public class EducationSpecificationProperties {
    * URL of the program&#39;s website
    * @return link
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "https://bijvak.nl", value = "URL of the program's website")
   @JsonProperty(JSON_PROPERTY_LINK)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -531,7 +531,7 @@ public class EducationSpecificationProperties {
    * Get parent
    * @return parent
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_PARENT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -566,7 +566,7 @@ public class EducationSpecificationProperties {
    * The EducationSpecifications that have this EducationSpecification as their parent. [&#x60;expandable&#x60;](#tag/education_specification_model)
    * @return children
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "The EducationSpecifications that have this EducationSpecification as their parent. [`expandable`](#tag/education_specification_model)")
   @JsonProperty(JSON_PROPERTY_CHILDREN)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -593,7 +593,7 @@ public class EducationSpecificationProperties {
    * Get organization
    * @return organization
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_ORGANIZATION)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -628,7 +628,7 @@ public class EducationSpecificationProperties {
    * The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.
    * @return consumers
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "{$ref=../consumers/RIO/V1/examples/EducationSpecification.yaml}", value = "The additional consumer elements that can be provided, see the [documentation on support for specific consumers](https://open-education-api.github.io/specification/#/consumers) for more information about this mechanism.")
   @JsonProperty(JSON_PROPERTY_CONSUMERS)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
@@ -655,7 +655,7 @@ public class EducationSpecificationProperties {
    * Object for additional non-standard attributes
    * @return ext
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Object for additional non-standard attributes")
   @JsonProperty(JSON_PROPERTY_EXT)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

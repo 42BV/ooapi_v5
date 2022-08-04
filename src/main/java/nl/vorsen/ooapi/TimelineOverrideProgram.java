@@ -83,7 +83,7 @@ public class TimelineOverrideProgram {
    * The day on which this timelineOverride ends (exclusive), RFC3339 (date)
    * @return validTo
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(example = "Wed Aug 31 02:00:00 CEST 2022", value = "The day on which this timelineOverride ends (exclusive), RFC3339 (date)")
   @JsonProperty(JSON_PROPERTY_VALID_TO)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

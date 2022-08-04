@@ -59,7 +59,7 @@ public class CourseExpandedAllOf {
    * Timeline overrides allow an implementation to provide versions of entities that will be valid in the future or have been in the past.
    * @return timelineOverrides
   **/
-  @javax.annotation.Nullable
+
   @ApiModelProperty(value = "Timeline overrides allow an implementation to provide versions of entities that will be valid in the future or have been in the past.")
   @JsonProperty(JSON_PROPERTY_TIMELINE_OVERRIDES)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)

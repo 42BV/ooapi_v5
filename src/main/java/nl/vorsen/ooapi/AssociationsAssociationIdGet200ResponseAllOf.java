@@ -47,7 +47,7 @@ public class AssociationsAssociationIdGet200ResponseAllOf {
    * Get state
    * @return state
   **/
-  @javax.annotation.Nullable
+  
   @ApiModelProperty(value = "")
   @JsonProperty(JSON_PROPERTY_STATE)
   @JsonInclude(value = JsonInclude.Include.USE_DEFAULTS)
